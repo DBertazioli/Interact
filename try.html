@@ -13524,7 +13524,7 @@ div#notebook {
 
 <span class="c1">#count_df=pd.read_csv(&quot;https://raw.githubusercontent.com/DBertazioli/NBinteract/master/count_df.csv&quot;)</span>
 <span class="c1">#ddrop=pd.read_csv(&quot;https://raw.githubusercontent.com/DBertazioli/NBinteract/master/map_df.csv&quot;)</span>
-<span class="nd">@interact</span><span class="p">(</span><span class="n">city</span><span class="o">=</span><span class="n">capital_list</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
+<span class="nd">@interact</span><span class="p">(</span><span class="n">city</span><span class="o">=</span><span class="n">capital_list</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span>
 <span class="k">def</span> <span class="nf">show_canned_examples</span><span class="p">(</span><span class="n">city</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;loading data...&quot;</span><span class="p">)</span>
     <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">capitals</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
