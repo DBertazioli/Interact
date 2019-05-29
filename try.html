@@ -13193,7 +13193,6 @@ div#notebook {
 
 <span class="kn">import</span> <span class="nn">base64</span> <span class="c1">#jpeg encoding</span>
 
-<span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span>
 
 <span class="c1">#import folium</span>
 <span class="kn">from</span> <span class="nn">folium</span> <span class="k">import</span> <span class="n">plugins</span>
@@ -13521,7 +13520,9 @@ div#notebook {
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#count_df=pd.read_csv(&quot;https://raw.githubusercontent.com/DBertazioli/NBinteract/master/count_df.csv&quot;)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span>
+
+<span class="c1">#count_df=pd.read_csv(&quot;https://raw.githubusercontent.com/DBertazioli/NBinteract/master/count_df.csv&quot;)</span>
 <span class="c1">#ddrop=pd.read_csv(&quot;https://raw.githubusercontent.com/DBertazioli/NBinteract/master/map_df.csv&quot;)</span>
 <span class="nd">@interact</span><span class="p">(</span><span class="n">city</span><span class="o">=</span><span class="n">capital_list</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>
 <span class="k">def</span> <span class="nf">show_canned_examples</span><span class="p">(</span><span class="n">city</span><span class="p">):</span>
