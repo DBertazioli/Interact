@@ -13663,7 +13663,7 @@ div#notebook {
     <span class="s1">&#39;hu&#39;</span><span class="p">:</span><span class="s2">&quot;Budapest&quot;</span><span class="p">,</span>
     <span class="s1">&#39;dk&#39;</span><span class="p">:</span><span class="s2">&quot;Copenaghen&quot;</span><span class="p">,</span>
     <span class="s1">&#39;ch&#39;</span><span class="p">:</span><span class="s2">&quot;Berna&quot;</span><span class="p">,</span>
-    <span class="s1">&#39;it&#39;</span><span class="p">:</span><span class="s2">&quot;Rome&quot;</span><span class="p">,</span>
+    <span class="s1">&#39;it_Milano&#39;</span><span class="p">:</span><span class="s2">&quot;Milano&quot;</span><span class="p">,</span>
     <span class="s1">&#39;at&#39;</span><span class="p">:</span><span class="s2">&quot;Vienna&quot;</span><span class="p">,</span>
     <span class="s1">&#39;fi&#39;</span><span class="p">:</span><span class="s2">&quot;Helsinki&quot;</span><span class="p">,</span>
     <span class="s1">&#39;pt&#39;</span><span class="p">:</span><span class="s2">&quot;Porto&quot;</span><span class="p">,</span>
@@ -13743,6 +13743,7 @@ div#notebook {
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#HIDDEN</span>
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="k">try</span><span class="p">:</span>
+    <span class="o">!</span>pip uninstall -y folium
     <span class="kn">import</span> <span class="nn">folium</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
 <span class="k">except</span><span class="p">:</span>
@@ -13765,7 +13766,7 @@ div#notebook {
     <span class="c1">#https://fontawesome.com/icons?d=gallery</span>
     <span class="c1">#event_icon=folium.Icon(color=&#39;darkred&#39;,icon=&quot;group&quot;, prefix=&quot;fa&quot;)</span>
     <span class="c1">#event_icon=folium.Icon(color=&#39;darkred&#39;)</span>
-    <span class="n">dict_country_hm</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;it_Roma&quot;</span><span class="p">:</span><span class="s2">&quot;Italy&quot;</span><span class="p">,</span><span class="s2">&quot;se&quot;</span><span class="p">:</span><span class="s2">&quot;Sweden&quot;</span><span class="p">,</span> <span class="s2">&quot;gb&quot;</span><span class="p">:</span><span class="s2">&quot;Great Britain&quot;</span><span class="p">,</span> <span class="s2">&quot;fi&quot;</span><span class="p">:</span><span class="s2">&quot;Finlad&quot;</span><span class="p">,</span> <span class="s2">&quot;fr&quot;</span><span class="p">:</span><span class="s2">&quot;France&quot;</span><span class="p">,</span> <span class="s2">&quot;es&quot;</span><span class="p">:</span><span class="s2">&quot;Spain&quot;</span><span class="p">,</span> <span class="s2">&quot;pt&quot;</span><span class="p">:</span><span class="s2">&quot;Portugal&quot;</span><span class="p">,</span> <span class="s2">&quot;de&quot;</span><span class="p">:</span><span class="s2">&quot;Germany&quot;</span><span class="p">,</span> <span class="s2">&quot;nl&quot;</span><span class="p">:</span><span class="s2">&quot;Netherlands&quot;</span><span class="p">}</span>
+    <span class="n">dict_country_hm</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;it_Milano&quot;</span><span class="p">:</span><span class="s2">&quot;Italy&quot;</span><span class="p">,</span><span class="s2">&quot;it_Roma&quot;</span><span class="p">:</span><span class="s2">&quot;Italy&quot;</span><span class="p">,</span><span class="s2">&quot;se&quot;</span><span class="p">:</span><span class="s2">&quot;Sweden&quot;</span><span class="p">,</span> <span class="s2">&quot;gb&quot;</span><span class="p">:</span><span class="s2">&quot;Great Britain&quot;</span><span class="p">,</span> <span class="s2">&quot;fi&quot;</span><span class="p">:</span><span class="s2">&quot;Finlad&quot;</span><span class="p">,</span> <span class="s2">&quot;fr&quot;</span><span class="p">:</span><span class="s2">&quot;France&quot;</span><span class="p">,</span> <span class="s2">&quot;es&quot;</span><span class="p">:</span><span class="s2">&quot;Spain&quot;</span><span class="p">,</span> <span class="s2">&quot;pt&quot;</span><span class="p">:</span><span class="s2">&quot;Portugal&quot;</span><span class="p">,</span> <span class="s2">&quot;de&quot;</span><span class="p">:</span><span class="s2">&quot;Germany&quot;</span><span class="p">,</span> <span class="s2">&quot;nl&quot;</span><span class="p">:</span><span class="s2">&quot;Netherlands&quot;</span><span class="p">}</span>
     <span class="k">if</span> <span class="n">city</span><span class="o">!=</span><span class="s2">&quot;Europe&quot;</span><span class="p">:</span>
         <span class="c1">#for capitals[country] in city :</span>
         <span class="c1">#print(ddrop[ddrop[&#39;Country&#39;]==country][&#39;v_lat&#39;].mean(),ddrop[ddrop[&#39;Country&#39;]==country][&#39;v_lon&#39;].mean())</span>
