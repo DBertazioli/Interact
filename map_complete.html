@@ -13491,9 +13491,9 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Press the layer button in order to filter over:</p>
 <ul>
-<li><p>the event layer ("Country")</p>
+<li><p>the event layer ("Display Events")</p>
 </li>
-<li><p>the aggregate layer ("Events")</p>
+<li><p>the aggregate layer ("Display Info")</p>
 </li>
 </ul>
 
@@ -13532,10 +13532,10 @@ div#notebook {
         <span class="n">mc</span><span class="o">=</span><span class="n">MarkerCluster</span><span class="p">(</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;yay&quot;</span>
             <span class="c1">#icon_create_function=icon_create_function</span>
         <span class="p">)</span>
-        <span class="n">radius_events</span> <span class="o">=</span> <span class="n">FeatureGroup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Events&#39;</span><span class="p">)</span>
+        <span class="n">radius_events</span> <span class="o">=</span> <span class="n">FeatureGroup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Display Events&#39;</span><span class="p">)</span>
         
         <span class="k">if</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">dict_country_hm</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-            <span class="n">heat_events</span><span class="o">=</span> <span class="n">FeatureGroup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Country&#39;</span><span class="p">)</span>
+            <span class="n">heat_events</span><span class="o">=</span> <span class="n">FeatureGroup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Display Info&#39;</span><span class="p">)</span>
 
             <span class="n">encoded</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;heatmaps/heatmap_&quot;</span><span class="o">+</span><span class="n">country</span><span class="o">+</span><span class="s2">&quot;.jpg&quot;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span><span class="c1">#.decode()                           </span>
             <span class="n">html4</span> <span class="o">=</span> <span class="s1">&#39;&lt;center&gt;&lt;img src=&quot;data:image/jpg;base64,</span><span class="si">{}</span><span class="s1">&quot;&gt;&lt;center&gt;&#39;</span><span class="o">.</span><span class="n">format</span>
