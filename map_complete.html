@@ -13230,7 +13230,7 @@ div#notebook {
 
   
 
-  <div class="nbinteract-hide_in
+  <div class="
       cell border-box-sizing code_cell rendered">
     <div class="input">
 
@@ -13435,11 +13435,25 @@ div#notebook {
         <span class="k">return</span> <span class="mi">10</span>
 
 <span class="n">ddrop</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/DBertazioli/Interact/master/map_df.csv&quot;</span><span class="p">)</span>
+</pre></div>
 
-<span class="n">country_list</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">ddrop</span><span class="o">.</span><span class="n">Country</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
+    </div>
+</div>
+</div>
+
+  </div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">country_list</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">ddrop</span><span class="o">.</span><span class="n">Country</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
 <span class="n">country_list</span>
 
-<span class="c1">#HIDDEN</span>
 
 <span class="n">capitals</span><span class="o">=</span><span class="p">{</span>
     <span class="s1">&#39;fr&#39;</span><span class="p">:</span><span class="s2">&quot;Paris&quot;</span><span class="p">,</span>
@@ -13492,7 +13506,23 @@ div#notebook {
     <span class="s1">&#39;ua&#39;</span><span class="p">:</span><span class="mi">2884000</span><span class="p">,</span>
     <span class="s1">&#39;hr&#39;</span><span class="p">:</span><span class="mi">792875</span>
 <span class="p">}</span>
-<span class="n">capital_list</span><span class="o">=</span><span class="p">[]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+  </div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">capital_list</span><span class="o">=</span><span class="p">[]</span>
 
 <span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">country_list</span><span class="p">:</span>
     <span class="k">try</span><span class="p">:</span>
@@ -13503,13 +13533,25 @@ div#notebook {
 <span class="c1">#print(country_list)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">capital_list</span><span class="p">)</span>
 
-<span class="c1">#HIDDEN</span>
 <span class="n">count_df</span><span class="o">=</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/DBertazioli/NBinteract/master/count_df.csv&quot;</span><span class="p">)</span>
 <span class="c1">#ddrop=pd.read_csv(&quot;https://raw.githubusercontent.com/DBertazioli/NBinteract/master/map_df.csv&quot;)</span>
+</pre></div>
 
+    </div>
+</div>
+</div>
 
+  </div>
 
-<span class="c1">#HIDDEN</span>
+  
+
+  <div class="nbinteract-hide_in
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#HIDDEN</span>
 
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="k">import</span> <span class="n">interact</span>
 
@@ -13754,6 +13796,16 @@ div#notebook {
 <div class="output_wrapper">
 <div class="output">
 
+
+<div class="output_area">
+
+    
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[&#39;Vienna&#39;, &#39;Bruxelles&#39;, &#39;Berna&#39;, &#39;Praga&#39;, &#39;Berlin&#39;, &#39;Copenaghen&#39;, &#39;Madrid&#39;, &#39;Helsinki&#39;, &#39;Paris&#39;, &#39;London&#39;, &#39;Athens&#39;, &#39;Zagabria&#39;, &#39;Budapest&#39;, &#39;Dublin&#39;, &#39;Luxemburg&#39;, &#39;Amsterdam&#39;, &#39;Oslo&#39;, &#39;Varsaw&#39;, &#39;Porto&#39;, &#39;Bucarest&#39;, &#39;Stockholm&#39;, &#39;Kiev&#39;, &#39;Europe&#39;]
+</pre>
+</div>
+</div>
 
 <div class="output_area">
 
