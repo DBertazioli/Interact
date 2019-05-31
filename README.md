@@ -37,6 +37,7 @@ Interagendo con i link sopra riportati si verrà reindirizzati, per ogni link, a
   <a href = "https://github.com/DBertazioli/"><img src="https://github.com/malborroni/Foundations_of_Computer-Science/blob/master/images/GitHub.png" width = "3%"></a>
   <a href = "https://www.facebook.com/dario.bertazioli.5"><img src="https://github.com/malborroni/Foundations_of_Computer-Science/blob/master/images/174848.svg" width = "3%"></a>
 </p>
+
 &#8860; &nbsp; **Fabrizio D'Intinosante**
 
 - *Cosa studio*: Studente Magistrale di Data Science presso l'Università degli Studi di Milano-Bicocca;
