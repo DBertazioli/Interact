@@ -6,9 +6,9 @@
   <a href="#instructions">&nbsp; Istruzioni &nbsp;</a> |
   <a href="#aboutus">&nbsp; About us &nbsp;</a>
 </p>
-lll
+
 <p align = "center">
-  <img src = "https://github.com/faber6911/Interact/blob/master/img/584c57c01fc21103bb375bae.png" width = "50%">
+  <img src = "https://github.com/faber6911/Interact/blob/master/img/584c57c01fc21103bb375bae.png" width = "35%">
 </p>
 
 <a name="overview"></a>
