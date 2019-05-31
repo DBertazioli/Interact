@@ -1,4 +1,4 @@
-# Interact
+<h1 align = "center"> Visualizzazione interattiva </h1>
 
 - [Heatmap](https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html)
 
