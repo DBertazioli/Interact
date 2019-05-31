@@ -13,13 +13,15 @@
 
 <a name="overview"></a>
 ## &#9741; &nbsp; Overview
-<p>
-  <a href = "https://www.meetup.com/it-IT/">
-  <img src = "https://github.com/faber6911/Interact/blob/master/img/584c57c01fc21103bb375bae.png" width = "5%">
-  </a>
-</p> è una piattaforma che permette ai propri utenti di partecipare ad eventi organizzati da gruppi locali, con argomento i topic più disparati come ad esempio tecnologia, eventi sociali, spettacoli, formazione professionale e tanto altro.<br>
+Meetup è una piattaforma che permette ai propri utenti di partecipare ad eventi organizzati da gruppi locali, con argomento i topic più disparati come ad esempio tecnologia, eventi sociali, spettacoli, formazione professionale e tanto altro.<br>
 Il nostro progetto è consistito nell'acquisire le sottoscrizioni degli utenti ai vari eventi presenti sulla piattaforma (in forma streaming), a livello globale. Successivamente abbiamo applicato una serie di analisi statistiche e di elaborazioni tra cui la visualizzazione riportata di seguito, di cui si richiede, con questo questionario, una valutazione.<br>
 
+<p>
+  <a href = "https://www.meetup.com/it-IT/">
+  <img src = "https://github.com/faber6911/Interact/blob/master/img/584c57c01fc21103bb375bae.png" width = "15%">
+  </a>
+</p> 
+<br>
 <a name="visualizations"></a>
 ## &#9741; &nbsp; La visualizzazione
 Questa visualizzazione, nello specifico, si compone di due parti:<br>
