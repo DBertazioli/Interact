@@ -8,7 +8,7 @@
 </p>
 
 <p align = "center">
-  <img src = "https://github.com/faber6911/Interact/blob/master/img/584c57c01fc21103bb375bae.png" width = "100%">
+  <img src = "https://github.com/faber6911/Interact/blob/master/img/584c57c01fc21103bb375bae.png" width = "50%">
 </p>
 
 <a name="overview"></a>
