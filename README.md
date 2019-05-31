@@ -1,4 +1,11 @@
-<h1 align = "center"> Visualizzazione interattiva </h1>
+<h1 align = "center">Visualizzazione interattiva</h1>
+
+<p align="center">
+  <a href="#overview">Overview &nbsp;</a> |
+  <a href="#visualizations">&nbsp; La visualizzazione &nbsp;</a> |
+  <a href="#instructions">&nbsp; Istruzioni &nbsp;</a> |
+  <a href="#aboutus">&nbsp; About us &nbsp;</a>
+</p>
 
 <a name="overview"></a>
 ## &#9741; &nbsp; Overview
@@ -9,7 +16,7 @@ Il nostro progetto è consistito nell'acquisire le sottoscrizioni degli utenti a
 ## &#9741; &nbsp; La visualizzazione
 Questa visualizzazione, nello specifico, si compone di due parti:<br>
 1. Una parte in cui sono rappresentati gli eventi per ogni Paese europeo: [Map](https://dbertazioli.github.io/Interact/stylish_map.html) <br>
-2. Una parte in cui sono rappresentati gli argomenti principali trattati dagli eventi tenutisi nei diversi Paesi europei: [Heatmap](https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html)
+2. Una parte in cui sono rappresentati i topic principali trattati dagli eventi tenutisi nei diversi Paesi europei: [Heatmap](https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html)
 
 <a name="instructions"></a>
 ## &#9741; &nbsp; Istruzioni
