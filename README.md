@@ -13,7 +13,7 @@
 
 <a name="overview"></a>
 ## &#9741; &nbsp; Overview
-<p align = "center">
+<p>
   <a href = "https://www.meetup.com/it-IT/">
   <img src = "https://github.com/faber6911/Interact/blob/master/img/584c57c01fc21103bb375bae.png" width = "5%">
   </a>
