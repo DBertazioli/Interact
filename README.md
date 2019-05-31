@@ -7,6 +7,10 @@
   <a href="#aboutus">&nbsp; About us &nbsp;</a>
 </p>
 
+<p align = "center">
+  <img src = "https://github.com/faber6911/Interact/blob/master/img/584c57c01fc21103bb375bae.png" width = "100%">
+</p>
+
 <a name="overview"></a>
 ## &#9741; &nbsp; Overview
 [Meetup](https://www.meetup.com/it-IT/) è una piattaforma che permette ai propri utenti di partecipare ad eventi organizzati da gruppi locali, con argomento i topic più disparati come ad esempio tecnologia, eventi sociali, spettacoli, formazione professionale e tanto altro.<br>
