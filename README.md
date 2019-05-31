@@ -1,6 +1,6 @@
 <p align = "left">
   <a href = "https://www.meetup.com/it-IT/">
-  <img src = "https://github.com/faber6911/Interact/blob/master/img/584c57c01fc21103bb375bae.png" width = "35%">
+  <img src = "https://github.com/faber6911/Interact/blob/master/img/584c57c01fc21103bb375bae.png" width = "25%">
   </a>
 </p>
 
