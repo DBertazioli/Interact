@@ -23,7 +23,7 @@ Questa visualizzazione, nello specifico, si compone di due parti:<br>
 2. Una parte in cui sono rappresentati i topic principali trattati dagli eventi tenutisi nei diversi Paesi europei: [Heatmap](https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html)
 
 <p align="center">
-  <img src = "https://github.com/faber6911/img/heatmap.png" width = "60%">
+  <img src = "https://github.com/faber6911/Interact/img/heatmap.png" width = "60%">
 </p>
 
 <a name="instructions"></a>
