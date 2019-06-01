@@ -22,6 +22,10 @@ Questa visualizzazione, nello specifico, si compone di due parti:<br>
 1. Una parte in cui sono rappresentati gli eventi per ogni Paese europeo: [Map](https://dbertazioli.github.io/Interact/stylish_map.html) <br>
 2. Una parte in cui sono rappresentati i topic principali trattati dagli eventi tenutisi nei diversi Paesi europei: [Heatmap](https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html)
 
+<p align="center">
+  <img src = "https://github.com/faber6911/img/heatmap.png" width = "60%">
+</p>
+
 <a name="instructions"></a>
 ## &#9741; &nbsp; Istruzioni
 Interagendo con i link sopra riportati si verrà reindirizzati, per ogni link, ad un differente Jupiter Notebook con all'interno tutte le istruzioni per attivare le visualizzazioni e poter esplorare liberamente, in questo senso, i dati da noi raccolti.
