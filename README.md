@@ -19,7 +19,7 @@ Il nostro progetto è consistito nell'acquisire le sottoscrizioni degli utenti a
 <a name="visualizations"></a>
 ## &#9741; &nbsp; La visualizzazione
 Questa visualizzazione, nello specifico, si compone di due parti:<br>
-1. Una parte in cui sono rappresentati gli eventi per ogni Paese europeo: [Map](https://faber6911.github.io/Interact/stylish_map.html) <br>
+1. Una parte in cui sono rappresentati gli eventi per ogni Paese europeo: [Map](https://dbertazioli.github.io/Interact/stylish_map.html) <br>
 2. Una parte in cui sono rappresentati i topic principali trattati dagli eventi tenutisi nei diversi Paesi europei: [Heatmap](https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html)
 
 <a name="instructions"></a>
