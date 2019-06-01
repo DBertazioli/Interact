@@ -20,6 +20,11 @@ Il nostro progetto è consistito nell'acquisire le sottoscrizioni degli utenti a
 ## &#9741; &nbsp; La visualizzazione
 Questa visualizzazione, nello specifico, si compone di due parti:<br>
 1. Una parte in cui sono rappresentati gli eventi per ogni Paese europeo: [Map](https://dbertazioli.github.io/Interact/stylish_map.html) <br>
+
+<p align="center">
+  <img src = "https://github.com/faber6911/Interact/blob/master/img/map.PNG" width = "60%">
+</p>
+
 2. Una parte in cui sono rappresentati i topic principali trattati dagli eventi tenutisi nei diversi Paesi europei: [Heatmap](https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html)
 
 <p align="center">
