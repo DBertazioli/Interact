@@ -13186,24 +13186,22 @@ div#notebook {
 </div>
 
   </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Esplora-la-heatmap">Esplora la heatmap<a class="anchor-link" href="#Esplora-la-heatmap">&#182;</a></h2><p>Benvenuto nella nostra heatmap interattiva basata sui dati raccolti dalle risposte degli utenti agli eventi <strong>Meetup</strong>.
+Premi il tasto <strong>Show Widgets</strong> per avviare la visualizzazione. Non importa se premerai quello superiore o quello inferiore, il risultato sarà lo stesso.</p>
+<h4 id="Cosa-posso-vedere?">Cosa posso vedere?<a class="anchor-link" href="#Cosa-posso-vedere?">&#182;</a></h4><p>Potrai esplorare la mappa europea osservando la rappresentazione della numerosità degli eventi che hanno trattato un determinato
+topic. I topic sono gli argomenti trattati durante gli eventi e possono essere molto vari: da <strong>Business</strong> fino a <strong>Tech</strong>, da <strong>LGBT</strong> ad <strong>Education</strong>.</p>
+<h4 id="Sicuri-che-la-vostra-mappa-non-rappresenti-semplicemente-una-mappa-di-popolazione-?">Sicuri che la vostra mappa non rappresenti semplicemente una mappa di popolazione ?<a class="anchor-link" href="#Sicuri-che-la-vostra-mappa-non-rappresenti-semplicemente-una-mappa-di-popolazione-?">&#182;</a></h4><p>Sicurissimi. Ci siamo premurati di scalare i dati in nostro possesso rispetto alla popolazione residente in macroaree così che le "macchie di calore" non siano direttamente proporzionali alla popolazione in quella zona ma rispecchino effettivamente la proporzione di trattamento di quel topic.</p>
+<h4 id="Come-posso-accedere-ai-contenuti-?">Come posso accedere ai contenuti ?<a class="anchor-link" href="#Come-posso-accedere-ai-contenuti-?">&#182;</a></h4><p>Esplorare i contenuti è molto semplice, ti basta infatti premere sull'apposito widget:</p>
+<p><img src="img/widget_heatmap.PNG" alt="widget"></p>
+<p>Quando avrai interagito con il menù a tendina ti si presenterà la scelta del topic da selezionare:</p>
+<p><img src="img/widget_in_heatmap.png" alt="widget_in"></p>
+<p><strong>A questo punto non ti resta altro da fare che selezionare il topic di interesse ed esplorare liberamente.</strong></p>
 
-  
-
-  <div class="nbinteract-hide_in
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#HIDDEN</span>
-<span class="c1"># ## Data Prep</span>
-</pre></div>
-
-    </div>
 </div>
 </div>
-
-  </div>
+</div>
 
   
 
@@ -13315,29 +13313,8 @@ div#notebook {
             <span class="n">ddrop</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">line</span><span class="o">.</span><span class="n">Index</span><span class="p">]</span><span class="o">=</span><span class="s2">&quot;it_Roma&quot;</span>
             
 <span class="c1">#ddrop[ddrop[&#39;Country&#39;]==&quot;it_Milano&quot;]</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-  </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Let's-build-a-map">Let's build a map<a class="anchor-link" href="#Let's-build-a-map">&#182;</a></h2>
-</div>
-</div>
-</div>
-
-  
-
-  <div class="nbinteract-hide_in
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#HIDDEN</span>
+<span class="c1">#HIDDEN</span>
 
 <span class="n">country_list</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">ddrop</span><span class="o">.</span><span class="n">Country</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span>
 <span class="c1">#print(len(country_list))</span>
@@ -13352,23 +13329,8 @@ div#notebook {
 <span class="c1">#print(tot_list)</span>
 <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">rm_list</span><span class="p">:</span>
     <span class="n">country_list</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">elem</span><span class="p">)</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-  </div>
-
-  
-
-  <div class="nbinteract-hide_in
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#HIDDEN</span>
+<span class="c1">#HIDDEN</span>
 
 <span class="n">pop</span><span class="o">=</span><span class="p">{</span>
     <span class="s1">&#39;fr&#39;</span><span class="p">:</span><span class="mi">2141000</span><span class="p">,</span>
@@ -13396,86 +13358,26 @@ div#notebook {
     <span class="s1">&#39;ua&#39;</span><span class="p">:</span><span class="mi">2884000</span><span class="p">,</span>
     <span class="s1">&#39;hr&#39;</span><span class="p">:</span><span class="mi">792875</span>
 <span class="p">}</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-  </div>
-
-  
-
-  <div class="nbinteract-hide_in
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#HIDDEN</span>
+<span class="c1">#HIDDEN</span>
 
 <span class="n">ddrop</span><span class="o">=</span><span class="n">ddrop</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">ddrop</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isin</span><span class="p">(</span><span class="n">country_list</span><span class="p">)]</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-  </div>
-
-  
-
-  <div class="nbinteract-hide_in
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#HIDDEN</span>
+<span class="c1">#HIDDEN</span>
 
 <span class="n">count_df</span><span class="o">=</span><span class="n">ddrop</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>  
 <span class="n">count_df</span><span class="o">=</span><span class="n">count_df</span><span class="p">[[</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span> <span class="s1">&#39;index&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 <span class="n">count_df</span><span class="p">[</span><span class="s1">&#39;norm_count&#39;</span><span class="p">]</span><span class="o">=</span><span class="mi">0</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-  </div>
-
-  
-
-  <div class="nbinteract-hide_in
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#HIDDEN</span>
+<span class="c1">#HIDDEN</span>
 
 <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">count_df</span><span class="o">.</span><span class="n">itertuples</span><span class="p">():</span>
     <span class="n">norm_count</span><span class="o">=</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">index</span><span class="o">/</span><span class="n">pop</span><span class="p">[</span><span class="n">line</span><span class="o">.</span><span class="n">Country</span><span class="p">])</span><span class="o">*</span><span class="mi">100000</span>
     <span class="c1">#norm_count</span>
     <span class="n">count_df</span><span class="o">.</span><span class="n">norm_count</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">line</span><span class="o">.</span><span class="n">Index</span><span class="p">]</span><span class="o">=</span><span class="n">norm_count</span>
 <span class="c1">#count_df</span>
-</pre></div>
 
-    </div>
-</div>
-</div>
-
-  </div>
-
-  
-
-  <div class="nbinteract-hide_in
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#HIDDEN</span>
+<span class="c1">#HIDDEN</span>
 <span class="n">capitals</span><span class="o">=</span><span class="p">{</span>
     <span class="s1">&#39;fr&#39;</span><span class="p">:</span><span class="s2">&quot;Paris&quot;</span><span class="p">,</span>
     <span class="s1">&#39;es&#39;</span><span class="p">:</span><span class="s2">&quot;Madrid&quot;</span><span class="p">,</span>
@@ -14011,23 +13913,14 @@ div#notebook {
 </div>
 
   </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The map is built using <a href="https://python-visualization.github.io/folium/">folium API</a> to <a href="https://leafletjs.com/">leaflet</a>.</p>
+<p>View the full code <a href="https://github.com/DBertazioli/Interact/blob/master/Interact_heatmap_european_capitals.ipynb">here</a>.</p>
 
-  
-
-  <div class="
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
 </div>
 </div>
-
-  </div>
+</div>
 
 
 

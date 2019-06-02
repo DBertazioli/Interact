@@ -13171,6 +13171,7 @@ div#notebook {
 <span class="k">except</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
     <span class="o">!{</span>sys.executable<span class="o">}</span> -m pip  uninstall -y folium<span class="p">;</span>
+    <span class="o">!{</span>sys.executable<span class="o">}</span> -m pip install folium
     <span class="kn">import</span> <span class="nn">folium</span>
 
 <span class="c1">#!{sys.executable} -m pip install --user git+https://github.com/DBertazioli/folium.git</span>
@@ -13209,13 +13210,25 @@ div#notebook {
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Press the layer button in order to filter over:</p>
+<h2 id="Esplora-la-mappa">Esplora la mappa<a class="anchor-link" href="#Esplora-la-mappa">&#182;</a></h2><p>Benvenuto nella nostra mappa interattiva basata sui dati raccolti dalle risposte degli utenti agli eventi <strong>Meetup</strong>.
+Premi il tasto <strong>Show Widgets</strong> per avviare la visualizzazione. Non importa se premerai quello superiore o quello inferiore,
+il risultato sarà lo stesso.</p>
+<h4 id="Cosa-posso-vedere?">Cosa posso vedere?<a class="anchor-link" href="#Cosa-posso-vedere?">&#182;</a></h4><p>Potrai esplorare la mappa europea osservando, per ogni ogni paese, gli eventi che si sono tenuti nella capitale (fatta eccezione per l'Italia, per cui oltre a Roma è disponibile anche Milano). Sarà così per te possibile visualizzare a colpo d'occhio la numerosità degli eventi da noi rilevati in uno streaming della durata di appena due settimane.</p>
+<h4 id="Davvero-si-sono-tenuti-cos&#236;-pochi-eventi-?">Davvero si sono tenuti cos&#236; pochi eventi ?<a class="anchor-link" href="#Davvero-si-sono-tenuti-cos&#236;-pochi-eventi-?">&#182;</a></h4><p>Assolutamente no. Gli eventi in nostro possesso, per quanto riguarda il territorio europeo, si aggirano su una cifra che supera le <strong>50 mila unità</strong>. Putroppo però per limiti computazionali dovuti alla potenza "free" offerta da mybinder.com (scelta obbligata per evitare che gli utenti della visualizzazione fossero costretti ad eseguire personalmente il notebook) e per poter rendere l'esplorazione il più fluida possibile, abbiamo deciso di limitare la visualizzazione solamente a quegli eventi che avessero raggiunto, durante lo streaming, un certo quantitativo di partecipanti.</p>
+<h4 id="Come-posso-accedere-ai-contenuti-?">Come posso accedere ai contenuti ?<a class="anchor-link" href="#Come-posso-accedere-ai-contenuti-?">&#182;</a></h4><p>Esplorare i contenuti è molto semplice, ti basta infatti premere sull'apposito widget:</p>
+<p><img src="img/widget1_map.PNG" alt="widget"></p>
+<p>Quando avrai interagito con il menù a tendina ti si presenterà la scelta della città da selezionare:</p>
+<p><img src="img/widget1_in_map.png" alt="widget_in"></p>
+<p><strong>NB</strong></p>
 <ul>
-<li><p>the event layer ("Display Events")</p>
-</li>
-<li><p>the aggregate layer ("Display Info")</p>
-</li>
+<li>Più la città è grande, più numerosi saranno gli eventi in essa rappresentati. Questo potrebbe comportare un dilatarsi del tempo di attesa.</li>
+<li>Al fondo del menù a tendina è disponibile la modalità <strong>Europe</strong>, ovvero la possibilità di visualizzare <strong>tutti</strong> gli eventi in un colpo solo, senza discriminare per città. La scelta di questa opzione potrebbe comportare tempi di attesa decisamente più lunghi rispetto alla scelta della singola città.</li>
 </ul>
+<p>Nel caso scegliessi comunque di visualizzare tutti gli eventi attraverso la modalità <strong>Europe</strong>, da vero temerario, per ogni Paese sarà disponibile un puntatore nero diverso da quello utilizzato per rappresentare gli eventi. Interangendo con questo puntatore potrai accedere a delle visualizzazioni riassuntive riguardo gli eventi di quel Paese.
+Nel caso fossi interessato soltanto a questi puntatori riassuntivi, dopo aver selezionato la modalità <strong>Europe</strong> ed aver atteso il caricamento della visualizzazione, potrai interagire con un altro widget, presente nella mappa, in basso a sinistra:</p>
+<p><img src="img/widget2_map.PNG" alt="widget_2"></p>
+<p>Una volta selezionato ti basterà deselezionare la voce riguardante gli eventi ed a questo punto disporrai solamente dei puntatori relativi alle informazioni riassuntive per ogni Paese.</p>
+<p><strong>A questo punto non ti resta altro da fare che selezionare la voce di interesse ed esplorare liberamente.</strong></p>
 
 </div>
 </div>
@@ -13802,7 +13815,8 @@ div#notebook {
                 <span class="n">f</span> <span class="o">=</span> <span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
 
                 <span class="n">m1</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">([</span><span class="nb">float</span><span class="p">(</span><span class="n">lat</span><span class="p">),</span> <span class="nb">float</span><span class="p">(</span><span class="n">lon</span><span class="p">)],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="n">zoom_on_radius</span><span class="p">(</span><span class="n">maxdist</span><span class="p">),</span> <span class="n">min_zoom</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#eventualmente aggiungere il livello di zoom in base al raggio può essere fyco</span>
-                <span class="n">Topic</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">topic</span><span class="p">)</span>
+                
+                <span class="n">Topic</span><span class="o">=</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">topic</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">))</span>
 
                 <span class="sd">&#39;&#39;&#39;#enable for info in popup</span>
 <span class="sd">                iframe = branca.element.IFrame(</span>
@@ -13812,7 +13826,7 @@ div#notebook {
 
 <span class="sd">                popup1 = folium.Popup(iframe, show=True)</span>
 <span class="sd">                &#39;&#39;&#39;</span>
-                <span class="n">f</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;&lt;center&gt;&lt;h3&gt;&lt;a href=&quot;</span><span class="si">{}</span><span class="s1">&quot; target=&quot;_blank&quot; style=&quot;color:#f64060;font-size:100%;&quot;&gt;</span><span class="si">{}</span><span class="s1">&lt;/a&gt;&lt;/h3&gt;&lt;/center&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">event_url</span><span class="p">,</span><span class="n">line</span><span class="o">.</span><span class="n">event_name</span><span class="p">)))</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;&lt;center&gt;&lt;h3&gt;&lt;a href=&quot;</span><span class="si">{}</span><span class="s1">&quot; target=&quot;_blank&quot; style=&quot;color:#f64060;font-size:100%;&quot;&gt;</span><span class="si">{}</span><span class="s1">&lt;/a&gt;&lt;/h3&gt;&lt;/center&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">event_url</span><span class="p">,</span><span class="n">line</span><span class="o">.</span><span class="n">event_name</span><span class="p">)))</span><span class="c1">#.encode(&quot;utf-8&quot;,&quot;surrogatepass&quot;).decode(&quot;unicode-escape&quot;, &quot;ignore&quot;))))</span>
                 <span class="c1">#f.html.add_child(branca.element.Element(html_file))</span>
 
                 <span class="n">m1</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">folium</span><span class="o">.</span><span class="n">Circle</span><span class="p">(</span>
@@ -13842,7 +13856,7 @@ div#notebook {
                 <span class="n">f</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="n">legend_html2</span><span class="p">))</span>
 
                 <span class="c1">#html_now=html2.format(ddrop[&#39;ID_event&#39;].at[line.Index], ddrop[&#39;venue_name&#39;].at[line.Index], line.count_part)</span>
-                <span class="n">html_now</span><span class="o">=</span><span class="n">html2</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">ID_event</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">date</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">venue_name</span><span class="p">,</span> <span class="s2">&quot;Topics&quot;</span><span class="p">,</span> <span class="n">Topic</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">count_part</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">mediandist</span><span class="p">)</span> <span class="p">)</span>
+                <span class="n">html_now</span><span class="o">=</span><span class="n">html2</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">ID_event</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">date</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">venue_name</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;unicode-escape&quot;</span><span class="p">,</span> <span class="s2">&quot;replace&quot;</span><span class="p">),</span> <span class="s2">&quot;Topics&quot;</span><span class="p">,</span> <span class="n">Topic</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">count_part</span><span class="p">,</span><span class="nb">int</span><span class="p">(</span><span class="n">mediandist</span><span class="p">)</span> <span class="p">)</span>
 
                 <span class="n">f</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="n">html_now</span><span class="p">))</span>
 
@@ -13910,7 +13924,7 @@ div#notebook {
                 <span class="n">f</span> <span class="o">=</span> <span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Figure</span><span class="p">()</span>
 
                 <span class="n">m1</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">([</span><span class="nb">float</span><span class="p">(</span><span class="n">lat</span><span class="p">),</span> <span class="nb">float</span><span class="p">(</span><span class="n">lon</span><span class="p">)],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="n">zoom_on_radius</span><span class="p">(</span><span class="n">maxdist</span><span class="p">),</span> <span class="n">min_zoom</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span> <span class="c1">#eventualmente aggiungere il livello di zoom in base al raggio può essere fyco</span>
-                <span class="n">Topic</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">topic</span><span class="p">)</span>
+                <span class="n">Topic</span><span class="o">=</span><span class="s2">&quot;, &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">topic</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">))</span>
 
                 <span class="sd">&#39;&#39;&#39;#enable for info in popup</span>
 <span class="sd">                iframe = branca.element.IFrame(</span>
@@ -13920,7 +13934,7 @@ div#notebook {
 
 <span class="sd">                popup1 = folium.Popup(iframe, show=True)</span>
 <span class="sd">                &#39;&#39;&#39;</span>
-                <span class="n">f</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;&lt;center&gt;&lt;h3&gt;&lt;a href=&quot;</span><span class="si">{}</span><span class="s1">&quot; target=&quot;_blank&quot; style=&quot;color:#f64060;font-size:100%;&quot;&gt;</span><span class="si">{}</span><span class="s1">&lt;/a&gt;&lt;/h3&gt;&lt;/center&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">event_url</span><span class="p">,</span><span class="n">line</span><span class="o">.</span><span class="n">event_name</span><span class="p">)))</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;&lt;center&gt;&lt;h3&gt;&lt;a href=&quot;</span><span class="si">{}</span><span class="s1">&quot; target=&quot;_blank&quot; style=&quot;color:#f64060;font-size:100%;&quot;&gt;</span><span class="si">{}</span><span class="s1">&lt;/a&gt;&lt;/h3&gt;&lt;/center&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">event_url</span><span class="p">,</span><span class="n">line</span><span class="o">.</span><span class="n">event_name</span><span class="p">)))</span><span class="c1">#.encode(&quot;utf-8&quot;,&quot;surrogatepass&quot;).decode(&quot;unicode-escape&quot;, &quot;ignore&quot;))))</span>
                 <span class="c1">#f.html.add_child(branca.element.Element(html_file))</span>
 
                 <span class="n">m1</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">folium</span><span class="o">.</span><span class="n">Circle</span><span class="p">(</span>
@@ -13950,7 +13964,7 @@ div#notebook {
                 <span class="n">f</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="n">legend_html2</span><span class="p">))</span>
 
                 <span class="c1">#html_now=html2.format(ddrop[&#39;ID_event&#39;].at[line.Index], ddrop[&#39;venue_name&#39;].at[line.Index], line.count_part)</span>
-                <span class="n">html_now</span><span class="o">=</span><span class="n">html2</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">ID_event</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">date</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">venue_name</span><span class="p">,</span> <span class="s2">&quot;Topics&quot;</span><span class="p">,</span> <span class="n">Topic</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">mediandist</span><span class="p">),</span> <span class="n">line</span><span class="o">.</span><span class="n">count_part</span><span class="p">)</span>
+                <span class="n">html_now</span><span class="o">=</span><span class="n">html2</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">ID_event</span><span class="p">,</span> <span class="n">line</span><span class="o">.</span><span class="n">date</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">venue_name</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s2">&quot;utf-8&quot;</span><span class="p">,</span><span class="s2">&quot;surrogatepass&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s2">&quot;unicode-escape&quot;</span><span class="p">,</span> <span class="s2">&quot;ignore&quot;</span><span class="p">),</span> <span class="s2">&quot;Topics&quot;</span><span class="p">,</span> <span class="n">Topic</span><span class="p">,</span> <span class="nb">int</span><span class="p">(</span><span class="n">mediandist</span><span class="p">),</span> <span class="n">line</span><span class="o">.</span><span class="n">count_part</span><span class="p">)</span>
 
                 <span class="n">f</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="n">html_now</span><span class="p">))</span>
 
@@ -14017,23 +14031,14 @@ div#notebook {
 </div>
 
   </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The map is built using <a href="https://python-visualization.github.io/folium/">folium API</a> to <a href="https://leafletjs.com/">leaflet</a>.</p>
+<p>View the full code <a href="https://github.com/DBertazioli/Interact/blob/master/stylish_map.ipynb">here</a>.</p>
 
-  
-
-  <div class="
-      cell border-box-sizing code_cell rendered">
-    <div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
 </div>
 </div>
-
-  </div>
+</div>
 
 
 
