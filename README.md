@@ -77,7 +77,7 @@ Interagendo con i link sopra riportati si verrà reindirizzati, per ogni link, a
 <br>
 
 <p align = "center">
-  <a href = "https://www.linkedin.com/in/massimilianoperletti/"><img src="https://raw.githubusercontent.com/malborroni/Machine_Learning_Project/master/img/174857.svg" width = "3%"></a>
+  <a href = "https://www.linkedin.com/in/massimilianoperletti/"><img src="https://github.com/malborroni/Machine_Learning_Project/blob/master/img/174857.svg" width = "3%"></a>
   <a href = "https://www.kaggle.com/aski11"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/thumbnail.png" width = "3%"></a>
   <a href = "https://github.com/maxi93/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/GitHub.png" width = "3%"></a>
   <a href = "https://www.twitter.com/MassiPerletti/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/Twitter_bird_logo.png" width = "3%"></a>
