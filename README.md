@@ -50,10 +50,10 @@ Interagendo con i link sopra riportati si verrà reindirizzati, per ogni link, a
 <br>
 
 <p align = "center">
-  <a href = "https://www.linkedin.com/in/dario-bertazioli-961ab4180/"><img src="https://raw.githubusercontent.com/malborroni/Machine_Learning_Project/master/img/174857.svg" width = "3%"></a>
-  <a href = "https://www.kaggle.com/dariobtz/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/thumbnail.png" width = "3%"></a>
+  <a href = "https://www.linkedin.com/in/dario-bertazioli-961ab4180/"><img src="https://raw.githubusercontent.com/DBertazioli/Interact/master/img/iconfinder_Popular_Social_Media-22_2329259.png" width = "3%"></a>
+<!--  <a href = "https://www.kaggle.com/dariobtz/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/thumbnail.png" width = "3%"></a> -->
   <a href = "https://github.com/DBertazioli/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/GitHub.png" width = "3%"></a>
-  <a href = "https://www.facebook.com/dario.bertazioli.5"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/174848.svg" width = "3%"></a>
+<!--  <a href = "https://www.facebook.com/dario.bertazioli.5"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/174848.svg" width = "3%"></a> -->
 </p>
 
 &#8860; &nbsp; **Fabrizio D'Intinosante**
@@ -63,11 +63,11 @@ Interagendo con i link sopra riportati si verrà reindirizzati, per ogni link, a
 <br>
 
 <p align = "center">
-  <a href = "https://www.linkedin.com/in/fabrizio-d-intinosante-125042180/"><img src="https://raw.githubusercontent.com/malborroni/Machine_Learning_Project/master/img/174857.svg" width = "3%"></a>
+  <a href = "https://www.linkedin.com/in/fabrizio-d-intinosante-125042180/"><img src="https://raw.githubusercontent.com/DBertazioli/Interact/master/img/iconfinder_Popular_Social_Media-22_2329259.png" width = "3%"></a>
   <a href = "https://www.kaggle.com/faber6911/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/thumbnail.png" width = "3%"></a>
   <a href = "https://github.com/faber6911/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/GitHub.png" width = "3%"></a>
   <a href = "https://www.twitter.com/faberdinto/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/Twitter_bird_logo.png" width = "3%"></a>
-  <a href = "https://www.facebook.com/fabrizio.dintinosante"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/174848.svg" width = "3%"></a>
+  <a href = "https://www.facebook.com/fabrizio.dintinosante"><img src="https://raw.githubusercontent.com/DBertazioli/Interact/master/img/iconfinder_Facebook_UI-03_2344286.png" width = "3%"></a>
 </p>
 
 &#8860; &nbsp; **Massimiliano Perletti**
@@ -77,9 +77,9 @@ Interagendo con i link sopra riportati si verrà reindirizzati, per ogni link, a
 <br>
 
 <p align = "center">
-  <a href = "https://www.linkedin.com/in/massimilianoperletti/"><img src="https://github.com/malborroni/Machine_Learning_Project/blob/master/img/174857.svg" width = "3%"></a>
+  <a href = "https://www.linkedin.com/in/massimilianoperletti/"><img src="https://raw.githubusercontent.com/DBertazioli/Interact/master/img/iconfinder_Popular_Social_Media-22_2329259.png" width = "3%"></a>
   <a href = "https://www.kaggle.com/aski11"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/thumbnail.png" width = "3%"></a>
   <a href = "https://github.com/maxi93/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/GitHub.png" width = "3%"></a>
   <a href = "https://www.twitter.com/MassiPerletti/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/Twitter_bird_logo.png" width = "3%"></a>
-  <a href = "https://www.facebook.com/massimilianoperletti1"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/174848.svg" width = "3%"></a>
+  <a href = "https://www.facebook.com/massimilianoperletti1"><img src="https://raw.githubusercontent.com/DBertazioli/Interact/master/img/iconfinder_Facebook_UI-03_2344286.png" width = "3%"></a>
 </p>
