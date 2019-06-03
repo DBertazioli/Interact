@@ -13,7 +13,7 @@
 
 <a name="overview"></a>
 ## &#9741; &nbsp; Overview
-<a href= "www.meetup.com" >Meetup</a> è una piattaforma che permette ai propri utenti di partecipare ad eventi organizzati da gruppi locali, aventi tematiche (topics) tra le più disparate, come ad esempio tecnologia, eventi sociali, spettacoli, formazione professionale e tanto altro.<br>
+<a href= "https://www.meetup.com" >Meetup</a> è una piattaforma che permette ai propri utenti di partecipare ad eventi organizzati da gruppi locali, aventi tematiche (topics) tra le più disparate, come ad esempio tecnologia, eventi sociali, spettacoli, formazione professionale e tanto altro.<br>
 Il nostro <a href = "https://github.com/DBertazioli/ARmeetup" >progetto</a> è consistito nell'acquisire (in forma di streaming data) le registrazioni degli utenti ai vari "meetups", ovvero gli eventi promossi sulla piattaforma utilizzata in tutto il mondo. <br>
 Successivamente abbiamo effettuato una serie di analisi statistiche e di elaborazioni tra cui la visualizzazione presentata di seguito.<br>
 
