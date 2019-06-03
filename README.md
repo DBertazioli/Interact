@@ -37,6 +37,9 @@ Questa visualizzazione, nello specifico, si compone di due sezioni:<br>
 
 </ol>
 
+<strong>NB</strong><br>
+Suggeriamo di visualizzare ciascuna mappa in fullscreen, per una migliore esperienza visiva.
+
 <a name="instructions"></a>
 ## &#9741; &nbsp; Istruzioni
 Interagendo con i link sopra riportati si verrà reindirizzati, per ogni link, ad un differente Jupiter Notebook con all'interno tutte le istruzioni per attivare le visualizzazioni e poter esplorare liberamente, in questo senso, i dati da noi raccolti.
