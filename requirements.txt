@@ -1,5 +1,5 @@
 numpy
 ipywidgets
 nbinteract
-git+https://github.com/DBertazioli/folium.git
+-e git+https://github.com/DBertazioli/folium.git@master#egg=folium
 
