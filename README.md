@@ -13,26 +13,28 @@
 
 <a name="overview"></a>
 ## &#9741; &nbsp; Overview
-Meetup è una piattaforma che permette ai propri utenti di partecipare ad eventi organizzati da gruppi locali, con argomento i topic più disparati come ad esempio tecnologia, eventi sociali, spettacoli, formazione professionale e tanto altro.<br>
-Il nostro progetto è consistito nell'acquisire le sottoscrizioni degli utenti ai vari eventi presenti sulla piattaforma (in forma streaming), a livello globale. Successivamente abbiamo applicato una serie di analisi statistiche e di elaborazioni tra cui la visualizzazione, divisa in due parti per ragioni di limiti computazionali, riportata di seguito<br>
+Meetup è una piattaforma che permette ai propri utenti di partecipare ad eventi organizzati da gruppi locali, aventi tematiche (topics) tra le più disparate, come ad esempio tecnologia, eventi sociali, spettacoli, formazione professionale e tanto altro.<br>
+Il nostro progetto è consistito nell'acquisire (in forma di streaming data) le registrazioni degli utenti ai vari eventi che vengono promossi sulla piattaforma utilizzata in tutto il mondo. <br>
+Successivamente abbiamo applicato una serie di analisi statistiche e di elaborazioni tra cui la visualizzazione presentata di seguito.<br>
 
 <a name="visualizations"></a>
 ## &#9741; &nbsp; La visualizzazione
-Questa visualizzazione, nello specifico, si compone di due parti:<br>
+Questa visualizzazione, nello specifico, si compone di due sezioni:<br>
 <ol>
- <li> Una parte in cui sono rappresentati i topic principali trattati dagli eventi tenutisi nei diversi Paesi europei: <a href=https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html>Heatmap</a> </li>
+ <li> Una prima parte in cui sono rappresentati i topic principali trattati dagli eventi tenutisi nei diversi Paesi europei: <a href=https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html>Heatmap</a> </li>
 
  <p align="center">
    <img src = "https://raw.githubusercontent.com/faber6911/Interact/master/img/heatmap.PNG" width = "80%">
  </p>
 
- <li> Una parte in cui sono rappresentati gli eventi per ogni Paese europeo: <a href=https://dbertazioli.github.io/Interact/stylish_map.html>Map</a> </li>
+ <li> Una seconda mappa in cui vengono presentati gli eventi per ogni Paese europeo: <a href=https://dbertazioli.github.io/Interact/stylish_map.html>Map</a> </li>
 
  <p align="center">
    <img src = "https://raw.githubusercontent.com/faber6911/Interact/master/img/map.PNG" width = "80%">
  </p>
 
 </ol>
+
 <a name="instructions"></a>
 ## &#9741; &nbsp; Istruzioni
 Interagendo con i link sopra riportati si verrà reindirizzati, per ogni link, ad un differente Jupiter Notebook con all'interno tutte le istruzioni per attivare le visualizzazioni e poter esplorare liberamente, in questo senso, i dati da noi raccolti.
@@ -61,10 +63,10 @@ Interagendo con i link sopra riportati si verrà reindirizzati, per ogni link, a
 
 <p align = "center">
   <a href = "https://www.linkedin.com/in/fabrizio-d-intinosante-125042180/"><img src="https://raw.githubusercontent.com/DBertazioli/Interact/master/img/iconfinder_Popular_Social_Media-22_2329259.png" width = "3%"></a>
-  <a href = "https://www.kaggle.com/faber6911/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/thumbnail.png" width = "3%"></a>
+ <!-- <a href = "https://www.kaggle.com/faber6911/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/thumbnail.png" width = "3%"></a> -->
   <a href = "https://github.com/faber6911/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/GitHub.png" width = "3%"></a>
-  <a href = "https://www.twitter.com/faberdinto/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/Twitter_bird_logo.png" width = "3%"></a>
-  <a href = "https://www.facebook.com/fabrizio.dintinosante"><img src="https://raw.githubusercontent.com/DBertazioli/Interact/master/img/iconfinder_Facebook_UI-03_2344286.png" width = "3%"></a>
+ <!-- <a href = "https://www.twitter.com/faberdinto/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/Twitter_bird_logo.png" width = "3%"></a> -->
+ <!-- <a href = "https://www.facebook.com/fabrizio.dintinosante"><img src="https://raw.githubusercontent.com/DBertazioli/Interact/master/img/iconfinder_Facebook_UI-03_2344286.png" width = "3%"></a> -->
 </p>
 
 &#8860; &nbsp; **Massimiliano Perletti**
@@ -75,8 +77,8 @@ Interagendo con i link sopra riportati si verrà reindirizzati, per ogni link, a
 
 <p align = "center">
   <a href = "https://www.linkedin.com/in/massimilianoperletti/"><img src="https://raw.githubusercontent.com/DBertazioli/Interact/master/img/iconfinder_Popular_Social_Media-22_2329259.png" width = "3%"></a>
-  <a href = "https://www.kaggle.com/aski11"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/thumbnail.png" width = "3%"></a>
+ <!-- <a href = "https://www.kaggle.com/aski11"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/thumbnail.png" width = "3%"></a> -->
   <a href = "https://github.com/maxi93/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/GitHub.png" width = "3%"></a>
-  <a href = "https://www.twitter.com/MassiPerletti/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/Twitter_bird_logo.png" width = "3%"></a>
-  <a href = "https://www.facebook.com/massimilianoperletti1"><img src="https://raw.githubusercontent.com/DBertazioli/Interact/master/img/iconfinder_Facebook_UI-03_2344286.png" width = "3%"></a>
+ <!-- <a href = "https://www.twitter.com/MassiPerletti/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/Twitter_bird_logo.png" width = "3%"></a> -->
+ <!-- <a href = "https://www.facebook.com/massimilianoperletti1"><img src="https://raw.githubusercontent.com/DBertazioli/Interact/master/img/iconfinder_Facebook_UI-03_2344286.png" width = "3%"></a> -->
 </p>
