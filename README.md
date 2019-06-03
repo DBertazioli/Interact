@@ -20,21 +20,18 @@ Il nostro progetto è consistito nell'acquisire le sottoscrizioni degli utenti a
 ## &#9741; &nbsp; La visualizzazione
 Questa visualizzazione, nello specifico, si compone di due parti:<br>
 
-1. Una parte in cui sono rappresentati i topic principali trattati dagli eventi tenutisi nei diversi Paesi europei: [Heatmap](https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html)
+ 1. Una parte in cui sono rappresentati i topic principali trattati dagli eventi tenutisi nei diversi Paesi europei: [Heatmap](https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html)
 
-<p align="center">
-  <img src = "https://raw.githubusercontent.com/faber6911/Interact/master/img/heatmap.PNG" width = "80%">
-</p>
+ <p align="center">
+   <img src = "https://raw.githubusercontent.com/faber6911/Interact/master/img/heatmap.PNG" width = "80%">
+ </p>
 
-2. Una parte in cui sono rappresentati gli eventi per ogni Paese europeo: [Map](https://dbertazioli.github.io/Interact/stylish_map.html) <br>
+ 2. Una parte in cui sono rappresentati gli eventi per ogni Paese europeo: [Map](https://dbertazioli.github.io/Interact/stylish_map.html) <br>
 
-<p align="center">
-  <img src = "https://raw.githubusercontent.com/faber6911/Interact/master/img/map.PNG" width = "80%">
-</p>
+ <p align="center">
+   <img src = "https://raw.githubusercontent.com/faber6911/Interact/master/img/map.PNG" width = "80%">
+ </p>
 
-
-<strong>NB</strong><br>
-Per poter correttamente visualizzare la seconda mappa è necessario aver prima eseguito la heatmap, questo per ragioni legate alla scrittura del codice che prevede che vengano aperte con un certo ordine.
 
 <a name="instructions"></a>
 ## &#9741; &nbsp; Istruzioni
