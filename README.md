@@ -2,7 +2,7 @@
   <a href="http://datascience.disco.unimib.it/it/"><img src = "https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/DSunimib.png" width = "100%"></a>
 </p>
 
-<h1 align = "center">Visualising Meetups</h1>
+<h1 align = "center">Visualizing Meetups</h1>
 
 <p align="center">
   <a href="#overview">Overview &nbsp;</a> |
@@ -14,7 +14,7 @@
 <a name="overview"></a>
 ## &#9741; &nbsp; Overview
 <a href= "https://www.meetup.com" >Meetup</a> è una piattaforma che permette ai propri utenti di partecipare ad eventi organizzati da gruppi locali, aventi tematiche (topics) tra le più disparate, come ad esempio tecnologia, eventi sociali, spettacoli, formazione professionale e tanto altro.<br>
-Il nostro <a href = "https://github.com/DBertazioli/ARmeetup" >progetto</a> è consistito nell'acquisire (in forma di streaming data) le registrazioni degli utenti ai vari "meetups", ovvero gli eventi promossi sulla piattaforma utilizzata in tutto il mondo. <br>
+Il nostro <a href = "https://github.com/DBertazioli/ARmeetup" >progetto</a> consiste nell'acquisire (in forma di streaming data) le registrazioni degli utenti ai vari "meetups", ovvero gli eventi promossi sulla piattaforma utilizzata in tutto il mondo. <br>
 Successivamente abbiamo effettuato una serie di analisi statistiche e di elaborazioni tra cui la visualizzazione presentata di seguito.<br>
 
 <a name="visualizations"></a>
