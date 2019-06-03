@@ -2,5 +2,4 @@ numpy
 ipywidgets
 nbinteract
 git+https://github.com/DBertazioli/folium.git
-https://github.com/DBertazioli/folium.git
-folium
+
