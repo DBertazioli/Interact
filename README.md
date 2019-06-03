@@ -19,20 +19,20 @@ Il nostro progetto è consistito nell'acquisire le sottoscrizioni degli utenti a
 <a name="visualizations"></a>
 ## &#9741; &nbsp; La visualizzazione
 Questa visualizzazione, nello specifico, si compone di due parti:<br>
-
- 1. Una parte in cui sono rappresentati i topic principali trattati dagli eventi tenutisi nei diversi Paesi europei: [Heatmap](https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html)
+<ol>
+ <li> Una parte in cui sono rappresentati i topic principali trattati dagli eventi tenutisi nei diversi Paesi europei: [Heatmap](https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html) </li>
 
  <p align="center">
    <img src = "https://raw.githubusercontent.com/faber6911/Interact/master/img/heatmap.PNG" width = "80%">
  </p>
 
- 2. Una parte in cui sono rappresentati gli eventi per ogni Paese europeo: [Map](https://dbertazioli.github.io/Interact/stylish_map.html) <br>
+ <li> Una parte in cui sono rappresentati gli eventi per ogni Paese europeo: [Map](https://dbertazioli.github.io/Interact/stylish_map.html) </li>
 
  <p align="center">
    <img src = "https://raw.githubusercontent.com/faber6911/Interact/master/img/map.PNG" width = "80%">
  </p>
 
-
+</ol>
 <a name="instructions"></a>
 ## &#9741; &nbsp; Istruzioni
 Interagendo con i link sopra riportati si verrà reindirizzati, per ogni link, ad un differente Jupiter Notebook con all'interno tutte le istruzioni per attivare le visualizzazioni e poter esplorare liberamente, in questo senso, i dati da noi raccolti.
