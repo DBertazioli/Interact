@@ -15,7 +15,7 @@
 ## &#9741; &nbsp; Overview
 Meetup è una piattaforma che permette ai propri utenti di partecipare ad eventi organizzati da gruppi locali, aventi tematiche (topics) tra le più disparate, come ad esempio tecnologia, eventi sociali, spettacoli, formazione professionale e tanto altro.<br>
 Il nostro progetto è consistito nell'acquisire (in forma di streaming data) le registrazioni degli utenti ai vari eventi che vengono promossi sulla piattaforma utilizzata in tutto il mondo. <br>
-Successivamente abbiamo applicato una serie di analisi statistiche e di elaborazioni tra cui la visualizzazione presentata di seguito.<br>
+Successivamente abbiamo effettuato una serie di analisi statistiche e di elaborazioni tra cui la visualizzazione presentata di seguito.<br>
 
 <a name="visualizations"></a>
 ## &#9741; &nbsp; La visualizzazione
