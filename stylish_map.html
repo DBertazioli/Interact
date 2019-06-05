@@ -13164,15 +13164,15 @@ div#notebook {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#HIDDEN</span>
 <span class="kn">import</span> <span class="nn">sys</span>
-
+<span class="c1">#!pip install git+https://github.com/DBertazioli/folium.git --user</span>
 <span class="c1">#!pip  uninstall -y folium;</span>
 <span class="k">try</span><span class="p">:</span> 
     <span class="kn">import</span> <span class="nn">folium</span>
 <span class="k">except</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;hello&quot;</span><span class="p">)</span>
-    <span class="o">!{</span>sys.executable<span class="o">}</span> -m pip  uninstall -y folium<span class="p">;</span>
-    <span class="o">!{</span>sys.executable<span class="o">}</span> -m pip install folium
-    <span class="kn">import</span> <span class="nn">folium</span>
+    <span class="c1">#!{sys.executable} -m pip  uninstall -y folium;</span>
+    <span class="c1">#!{sys.executable} -m pip install folium</span>
+    <span class="c1">#import folium</span>
 
 <span class="c1">#!{sys.executable} -m pip install --user git+https://github.com/DBertazioli/folium.git</span>
 <span class="c1">#!{sys.executable} -m pip install --user git+https://github.com/DBertazioli/folium</span>
@@ -13461,56 +13461,23 @@ Nel caso fossi interessato soltanto a questi puntatori riassuntivi, dopo aver se
 <span class="s2">    &quot;&quot;&quot;</span>
 <span class="n">html2_old</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">&lt;div style=&quot;</span>
-<span class="s2">    position: fixed; </span>
-<span class="s2">    top: 80px;</span>
-<span class="s2">    left: 80px;</span>
-<span class="s2">    width: 300px;</span>
-<span class="s2">    height: 340px;</span>
-<span class="s2">    z-index:9999;</span>
-<span class="s2">    font-size:14px;</span>
-<span class="s2">    &quot;&gt;</span>
-<span class="s2">    &lt;h4&gt; ID Evento: &lt;a style=&quot;color:#e6194b;font-size:70%;&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/h4&gt;</span>
-<span class="s2">    &lt;h4&gt; Event Data: &lt;/h4&gt;&lt;p&gt;&lt;a style=&quot;color:#e6194b;font-size:100%;&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/p&gt;</span>
-<span class="s2">    &lt;h4&gt; Location: &lt;/h4&gt;&lt;p&gt;&lt;a style=&quot;color:#e6194b;font-size:100%;&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/p&gt;</span>
-<span class="s2">    &lt;h4&gt; </span><span class="si">{}</span><span class="s2"> dell&#39;evento: &lt;/h4&gt;&lt;p&gt;&lt;a style=&quot;color:#e6194b;font-size:100%;&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/p&gt;</span>
-<span class="s2">    &lt;h5&gt; Raggio del bacino d&#39;utenza: &lt;a style=&quot;color:#e6194b;font-size:95%;&quot;&gt;</span><span class="si">{}</span><span class="s2"> Km&lt;/a&gt; &lt;/h5&gt;</span>
-<span class="s2">    &lt;h4&gt; Partecipanti: &lt;a style=&quot;color:#e6194b;font-size:80%;&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/h4&gt;</span>
-<span class="s2">    </span>
-<span class="s2">&lt;/div&gt;</span>
-<span class="s2">&lt;div style=&quot;</span>
-<span class="s2">    position: fixed; </span>
-<span class="s2">    top: 70px;</span>
-<span class="s2">    left: 70px;</span>
-<span class="s2">    width: 320px;</span>
-<span class="s2">    height: 360px;</span>
-<span class="s2">    z-index:9998;</span>
-<span class="s2">    font-size:14px;</span>
-<span class="s2">    background-color: #ffffff;</span>
-<span class="s2">    filter: blur(8px);</span>
-<span class="s2">    -webkit-filter: blur(8px);</span>
-<span class="s2">    opacity: 0.7;</span>
-<span class="s2">    &quot;&gt;</span>
-<span class="s2">&lt;/div&gt;</span>
-<span class="s2">    &quot;&quot;&quot;</span>    
-<span class="n">html2</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">&lt;div style=&quot;</span>
 <span class="s2">    font-family: &#39;Montserrat&#39;, sans-serif;</span>
 <span class="s2">    font-weight: 800;</span>
 <span class="s2">    position: fixed; </span>
 <span class="s2">    bottom: 5px;</span>
 <span class="s2">    left: 10px;</span>
-<span class="s2">    width: 350px;</span>
-<span class="s2">    height: 300px;</span>
+<span class="s2">    width: 300px;</span>
+<span class="s2">    height: 330px;</span>
 <span class="s2">    z-index:9999;</span>
 <span class="s2">    font-size:16px;</span>
 <span class="s2">    color:#f64060;&quot;&gt;</span>
 <span class="s2">    </span>
-<span class="s2">    &lt;h4&gt; ID Evento: &lt;a style=&quot;color:#dde072;font-size:70%;&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/h4&gt;</span>
+<span class="s2">    &lt;h4&gt; Event ID : &lt;a style=&quot;color:#dde072;font-size:70%;&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/h4&gt;</span>
 <span class="s2">    &lt;h4&gt; Event Data: &lt;/h4&gt;&lt;p&gt;&lt;a style=&quot;color:#dde072;font-size:100%;font-weight:400;&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/p&gt;</span>
 <span class="s2">    &lt;h4&gt; Location: &lt;/h4&gt;&lt;p&gt;&lt;a style=&quot;color:#dde072;font-size:100%;font-size:100%;font-weight:400;&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/p&gt;</span>
-<span class="s2">    &lt;h4&gt; </span><span class="si">{}</span><span class="s2"> dell&#39;evento: &lt;/h4&gt;&lt;p&gt;&lt;a style=&quot;color:#dde072;font-size:100%;font-size:100%;font-weight:400;&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/p&gt;</span>
-<span class="s2">    &lt;h4&gt; Partecipanti: &lt;a style=&quot;color:#dde072;font-size:80%;&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/h4&gt;</span>
-<span class="s2">    &lt;h5&gt; Raggio del bacino d&#39;utenza: &lt;a style=&quot;color:#dde072;font-size:95%;&quot;&gt;</span><span class="si">{}</span><span class="s2"> Km&lt;/a&gt; &lt;/h5&gt;</span>
+<span class="s2">    &lt;h4&gt; Event </span><span class="si">{}</span><span class="s2"> : &lt;/h4&gt;&lt;p&gt;&lt;a style=&quot;color:#dde072;font-size:100%;font-size:100%;font-weight:400;&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="s2">    &lt;h4&gt; Participants: &lt;a style=&quot;color:#dde072;font-size:80%;&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/h4&gt;</span>
+<span class="s2">    &lt;h5&gt; Area of Influence Radius (median): &lt;a style=&quot;color:#dde072;font-size:95%;&quot;&gt;</span><span class="si">{}</span><span class="s2"> Km&lt;/a&gt; &lt;/h5&gt;</span>
 <span class="s2">    </span>
 <span class="s2">    </span>
 <span class="s2">&lt;/div&gt;</span>
@@ -13521,17 +13488,63 @@ Nel caso fossi interessato soltanto a questi puntatori riassuntivi, dopo aver se
 <span class="s2">    bottom: -5px;</span>
 <span class="s2">    left: -5px;</span>
 <span class="s2">    width: 300px;</span>
-<span class="s2">    height: 320px;</span>
+<span class="s2">    height: 340px;</span>
 <span class="s2">    z-index:9998;</span>
 <span class="s2">    font-size:14px;</span>
 <span class="s2">    background-color: #5c5c5c;</span>
 <span class="s2">    filter: blur(0.5px);</span>
 <span class="s2">    -webkit-filter: blur(0.5px);</span>
-<span class="s2">    opacity: 0.9;</span>
+<span class="s2">    opacity: 0.95;</span>
 <span class="s2">    border-radius:8px;</span>
 <span class="s2">    &quot;&gt;</span>
 <span class="s2">&lt;/div&gt;</span>
 <span class="s2">    &quot;&quot;&quot;</span>
+
+<span class="n">html2</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;div style=&quot;</span>
+<span class="s2">    font-family: &#39;Montserrat&#39;, sans-serif;</span>
+<span class="s2">    font-weight:bold;</span>
+<span class="s2">    position: fixed; </span>
+<span class="s2">    bottom: 15px;</span>
+<span class="s2">    left: 5px;</span>
+<span class="s2">    width: 300px;</span>
+<span class="s2">    height: 330px;</span>
+<span class="s2">    z-index:9999;</span>
+<span class="s2">    font-size:17px;</span>
+<span class="s2">    font-variant:small-caps;</span>
+<span class="s2">    color:#b9cddf;</span>
+<span class="s2">    font-size-adjust:0.6;&quot;&gt;</span>
+<span class="s2">    </span>
+<span class="s2">    &lt;h5&gt; Event ID: &lt;a style=&quot;color:#f75572;font-size:100%;font-family: &#39;Montserrat&#39;, sans-serif;font-weight:lighter&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/h5&gt;</span>
+<span class="s2">    &lt;br&gt;</span>
+<span class="s2">    &lt;h4&gt; Event Data: &lt;/h4&gt;&lt;p&gt;&lt;a style=&quot;color:#f75572;font-size:80%;font-family: &#39;Montserrat&#39;, sans-serif;font-weight:lighter&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="s2">    &lt;h4&gt; Location: &lt;/h4&gt;&lt;p&gt;&lt;a style=&quot;color:#f75572;font-size:80%;font-family: &#39;Montserrat&#39;, sans-serif;font-weight:lighter&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="s2">    &lt;h4&gt; Event </span><span class="si">{}</span><span class="s2">: &lt;/h4&gt;&lt;p&gt;&lt;a style=&quot;color:#f75572;font-size:80%;font-family: &#39;Montserrat&#39;, sans-serif;font-weight:lighter&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="s2">    </span>
+<span class="s2">    &lt;h5&gt; Participants: &lt;a style=&quot;color:#f75572;font-size:100%;font-family: &#39;Montserrat&#39;, sans-serif;font-weight:lighter&quot;&gt;</span><span class="si">{}</span><span class="s2">&lt;/a&gt;&lt;/h5&gt;</span>
+<span class="s2">    &lt;h5&gt; Area of Influence Radius (median): &lt;a style=&quot;color:#f75572;font-size:100%;font-family: &#39;Montserrat&#39;, sans-serif;font-weight:lighter&quot;&gt;</span><span class="si">{}</span><span class="s2">Km&lt;/a&gt; &lt;/h5&gt;</span>
+<span class="s2">    </span>
+<span class="s2">    </span>
+<span class="s2">&lt;/div&gt;</span>
+
+<span class="s2">&lt;div style=&quot;</span>
+<span class="s2">    font-family: &#39;Montserrat&#39;, sans-serif;</span>
+<span class="s2">    position: fixed; </span>
+<span class="s2">    bottom: -5px;</span>
+<span class="s2">    left: -5px;</span>
+<span class="s2">    width: 320px;</span>
+<span class="s2">    height: 350px;</span>
+<span class="s2">    z-index:9998;</span>
+<span class="s2">    font-size:14px;</span>
+<span class="s2">    background-color: #182534;</span>
+<span class="s2">    filter: blur(0.5px);</span>
+<span class="s2">    -webkit-filter: blur(0.5px);</span>
+<span class="s2">    opacity: 0.95;</span>
+<span class="s2">    border-radius:8px;</span>
+<span class="s2">    &quot;&gt;</span>
+<span class="s2">&lt;/div&gt;</span>
+<span class="s2">    &quot;&quot;&quot;</span>
+
 
 <span class="n">title</span><span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
 <span class="s2">&lt;div style=&quot;</span>
@@ -13562,24 +13575,24 @@ Nel caso fossi interessato soltanto a questi puntatori riassuntivi, dopo aver se
 <span class="s2">                  style=”color:red”&gt;&lt;/i&gt;</span>
 <span class="s2">      &lt;/div&gt;</span>
 <span class="s2">     &quot;&quot;&quot;</span>
-<span class="n">legend_html2</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="n">legend_html2_OLD</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
 <span class="s1">&lt;div style=&quot;</span>
 <span class="s1">    position: fixed; </span>
 <span class="s1">    bottom: 45px;</span>
 <span class="s1">    right: 10px;</span>
-<span class="s1">    width: 250px;</span>
+<span class="s1">    width: 275px;</span>
 <span class="s1">    height: 40px;</span>
 <span class="s1">    z-index:9999;</span>
 <span class="s1">    font-size:14px;</span>
 <span class="s1">    &quot;&gt;</span>
-<span class="s1">    &lt;center&gt;&lt;p style= &quot;color:#dde072; font-size:110%&quot; &gt;&lt;a style=&quot;color:#f64060;font-size:130%;&quot;&gt;🔴&lt;/a&gt;&amp;emsp;Area d&#39;influenza media &lt;/p&gt;&lt;/center&gt;</span>
-<span class="s1">    &lt;center&gt;&lt;p style= &quot;color:#dde072;font-size:110%&quot;&gt;&lt;a style=&quot;color:#f64060;font-size:170%;margin-left:10px;&quot;&gt;⭕&lt;/a&gt;&amp;emsp;Area d&#39;influenza massima&lt;/p&gt;&lt;/center&gt;</span>
+<span class="s1">    &lt;center&gt;&lt;p style= &quot;color:#dde072; font-size:110%&quot; &gt;&lt;a style=&quot;color:#f64060;font-size:130%;margin-left:1px;&quot;&gt;🔴&lt;/a&gt;&amp;emsp;Area of Inflence (median)&lt;/p&gt;&lt;/center&gt;</span>
+<span class="s1">    &lt;center&gt;&lt;p style= &quot;color:#dde072;font-size:110%&quot;&gt;&lt;a style=&quot;color:#f64060;font-size:170%;margin-left:17px;&quot;&gt;⭕&lt;/a&gt;&amp;emsp;Area of Influence (3rd quartile)&lt;/p&gt;&lt;/center&gt;</span>
 <span class="s1">&lt;/div&gt;</span>
 <span class="s1">&lt;div style=&quot;</span>
 <span class="s1">    position: fixed; </span>
 <span class="s1">    bottom: -2px;</span>
 <span class="s1">    right: -2px;</span>
-<span class="s1">    width: 250px;</span>
+<span class="s1">    width: 275px;</span>
 <span class="s1">    height: 90px; </span>
 <span class="s1">    z-index:9998;</span>
 <span class="s1">    font-size:14px;</span>
@@ -13592,34 +13605,36 @@ Nel caso fossi interessato soltanto a questi puntatori riassuntivi, dopo aver se
 <span class="s1">&lt;/div&gt;</span>
 <span class="s1">&#39;&#39;&#39;</span>
 
-<span class="n">legend_html2_max</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
-<span class="s2">&lt;div class=&quot;</span>
-<span class="s2">    position: fixed; </span>
-<span class="s2">    bottom: 50px;</span>
-<span class="s2">    left: 80px;</span>
-<span class="s2">    width: 250px;</span>
-<span class="s2">    height: 40px;</span>
-<span class="s2">    z-index:9999;</span>
-<span class="s2">    font-size:14px;</span>
-<span class="s2">    &quot;&gt;</span>
-<span class="s2">    &lt;p style=font-size:70%;&gt;&lt;a style=&quot;color:#f64060;font-size:100%;&quot;&gt;🔴&lt;/a&gt;&amp;emsp;Area d&#39;influenza media &lt;/p&gt;</span>
-<span class="s2">    &lt;p style=font-weight:200;font-size:70%;&gt;&lt;a style=&quot;color:#f64060;font-size:100%;&quot;&gt;⭕&lt;/a&gt;&amp;emsp;Area d&#39;influenza massima&lt;/p&gt;</span>
-<span class="s2">&lt;/div&gt;</span>
-<span class="s2">&lt;div style=&quot;</span>
-<span class="s2">    font-family: &#39;Montserrat&#39;, sans-serif;</span>
-<span class="s2">    position: fixed; </span>
-<span class="s2">    bottom: -5px;</span>
-<span class="s2">    right: -5px;</span>
-<span class="s2">    width: 220px;</span>
-<span class="s2">    height: 80px; </span>
-<span class="s2">    z-index:9998;</span>
-<span class="s2">    font-size:14px;</span>
-<span class="s2">    background-color: #24292E;</span>
-<span class="s2">    opacity: 0.9;</span>
-<span class="s2">    border-radius:8px;</span>
-<span class="s2">    &quot;&gt;</span>
-<span class="s2">&lt;/div&gt;</span>
-<span class="s2">&quot;&quot;&quot;</span>
+<span class="n">legend_html2</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">&lt;div style=&quot;</span>
+<span class="s1">    position: fixed; </span>
+<span class="s1">    bottom: 30px;</span>
+<span class="s1">    right: 10px;</span>
+<span class="s1">    width: 275px;</span>
+<span class="s1">    height: 40px;</span>
+<span class="s1">    z-index:9999;</span>
+<span class="s1">    font-size:14px;</span>
+<span class="s1">    font-size-adjust:0.6;</span>
+<span class="s1">    &quot;&gt;</span>
+<span class="s1">    &lt;center&gt;&lt;p style= &quot;color:#b9cddf;font-variant:small-caps;font-family: &#39;Montserrat&#39;, sans-serif;font-size:90%&quot; &gt;&lt;a style=&quot;color:#f64060;font-size:90%;margin-left:1px;&quot;&gt;🔴&lt;/a&gt;&amp;emsp;Area of Influence (median)&lt;/p&gt;&lt;/center&gt;</span>
+<span class="s1">    &lt;center&gt;&lt;p style= &quot;color:#b9cddf;font-variant:small-caps;font-family: &#39;Montserrat&#39;, sans-serif;font-size:90%&quot;&gt;&lt;a style=&quot;color:#f64060;font-size:120%;margin-left:17px;&quot;&gt;⭕&lt;/a&gt;&amp;emsp;Area of Influence (3rd quartile)&lt;/p&gt;&lt;/center&gt;</span>
+<span class="s1">&lt;/div&gt;</span>
+<span class="s1">&lt;div style=&quot;</span>
+<span class="s1">    position: fixed; </span>
+<span class="s1">    bottom: -2px;</span>
+<span class="s1">    right: -2px;</span>
+<span class="s1">    width: 275px;</span>
+<span class="s1">    height: 90px; </span>
+<span class="s1">    z-index:9998;</span>
+<span class="s1">    font-size:14px;</span>
+<span class="s1">    background-color: #182534;</span>
+<span class="s1">    filter: blur(0.5px);</span>
+<span class="s1">    -webkit-filter: blur(0.5px);</span>
+<span class="s1">    opacity: 0.9;</span>
+<span class="s1">    border-radius:8px;</span>
+<span class="s1">    &quot;&gt;</span>
+<span class="s1">&lt;/div&gt;</span>
+<span class="s1">&#39;&#39;&#39;</span>
 
 <span class="c1">#html_file = open(&#39;widget.html&#39;,&#39;r&#39;)</span>
 <span class="c1">#html_file=html_file.read()</span>
@@ -13781,7 +13796,7 @@ Nel caso fossi interessato soltanto a questi puntatori riassuntivi, dopo aver se
         
         <span class="k">if</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">dict_country_hm</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
             <span class="n">heat_events</span><span class="o">=</span> <span class="n">FeatureGroup</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;Display Info&#39;</span><span class="p">)</span>
-            <span class="n">string</span><span class="o">=</span><span class="s1">&#39;&lt;center&gt;&lt;h1&gt;</span><span class="si">{}</span><span class="s1">&lt;a style=&quot;color:#e6194b;font-size:100%;&quot;&gt;</span><span class="si">{}</span><span class="s1">&lt;/a&gt;&lt;/h1&gt;&lt;/center&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Aggregate info of &quot;</span><span class="p">,</span><span class="n">city</span><span class="p">)</span>
+            <span class="n">string</span><span class="o">=</span><span class="s1">&#39;&lt;center&gt;&lt;h1&gt;&lt;a style=&quot;color:#b9cddf;font-size:100%;&quot;&gt;</span><span class="si">{}{}</span><span class="s1">&lt;/a&gt;&lt;/h1&gt;&lt;/center&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Aggregate info of &quot;</span><span class="p">,</span><span class="n">dict_country_hm</span><span class="p">[</span><span class="n">country</span><span class="p">])</span>
             <span class="n">string1</span><span class="o">=</span><span class="s1">&#39;&lt;center&gt;&lt;img src=&quot;data:image/jpg;base64,</span><span class="si">{}</span><span class="s1">&quot;&gt;&lt;center&gt;&#39;</span>
             <span class="n">fig</span><span class="o">=</span><span class="n">string</span><span class="o">+</span><span class="n">string1</span>
             <span class="n">encoded</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;heatmaps/complete_heatmap_&quot;</span><span class="o">+</span><span class="n">country</span><span class="o">+</span><span class="s2">&quot;.jpg&quot;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span><span class="c1">#.decode()                           </span>
@@ -13826,9 +13841,10 @@ Nel caso fossi interessato soltanto a questi puntatori riassuntivi, dopo aver se
 
 <span class="sd">                popup1 = folium.Popup(iframe, show=True)</span>
 <span class="sd">                &#39;&#39;&#39;</span>
-                <span class="n">f</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;&lt;center&gt;&lt;h3&gt;&lt;a href=&quot;</span><span class="si">{}</span><span class="s1">&quot; target=&quot;_blank&quot; style=&quot;color:#f64060;font-size:100%;&quot;&gt;</span><span class="si">{}</span><span class="s1">&lt;/a&gt;&lt;/h3&gt;&lt;/center&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">event_url</span><span class="p">,</span><span class="n">line</span><span class="o">.</span><span class="n">event_name</span><span class="p">)))</span><span class="c1">#.encode(&quot;utf-8&quot;,&quot;surrogatepass&quot;).decode(&quot;unicode-escape&quot;, &quot;ignore&quot;))))</span>
+                <span class="c1">#f.html.add_child(branca.element.Element(&#39;&lt;center&gt;&lt;h3&gt;&lt;a href=&quot;{}&quot; target=&quot;_blank&quot; style=&quot;color:#f64060;font-size:100%;&quot;&gt;{}&lt;/a&gt;&lt;/h3&gt;&lt;/center&gt;&#39;.format(line.event_url,line.event_name)))#.encode(&quot;utf-8&quot;,&quot;surrogatepass&quot;).decode(&quot;unicode-escape&quot;, &quot;ignore&quot;))))</span>
                 <span class="c1">#f.html.add_child(branca.element.Element(html_file))</span>
-
+                <span class="n">f</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;&lt;center&gt;&lt;h3&gt;&lt;a href=&quot;</span><span class="si">{}</span><span class="s1">&quot; target=&quot;_blank&quot; style=&quot;color:#f75572;font-size:120%;font-weight:bold;&quot;&gt;</span><span class="si">{}</span><span class="s1">&lt;/a&gt;&lt;/h3&gt;&lt;/center&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">event_url</span><span class="p">,</span><span class="n">line</span><span class="o">.</span><span class="n">event_name</span><span class="p">)))</span><span class="c1">#.encode(&quot;utf-8&quot;,&quot;surrogatepass&quot;).decode(&quot;unicode-escape&quot;, &quot;ignore&quot;))))</span>
+                
                 <span class="n">m1</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">folium</span><span class="o">.</span><span class="n">Circle</span><span class="p">(</span>
                   <span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="nb">float</span><span class="p">(</span><span class="n">lat</span><span class="p">),</span> <span class="nb">float</span><span class="p">(</span><span class="n">lon</span><span class="p">)],</span>
                   <span class="c1">#popup=popup1,#uncomment for info in popup</span>
@@ -13866,7 +13882,7 @@ Nel caso fossi interessato soltanto a questi puntatori riassuntivi, dopo aver se
 
                 <span class="n">m1</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 
-                <span class="n">iframe</span> <span class="o">=</span> <span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="n">html</span><span class="o">=</span> <span class="s1">&#39;&lt;body style= &quot;background-color:#5c5c5c;&quot;&gt; &lt;/body&gt;&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+                <span class="n">iframe</span> <span class="o">=</span> <span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="n">html</span><span class="o">=</span> <span class="s1">&#39;&lt;body style= &quot;background-color:#182534;&quot;&gt; &lt;/body&gt;&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
                 <span class="n">f</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">iframe</span><span class="p">)</span>
 
                 <span class="c1"># Let&#39;s put the IFrame in a Popup</span>
@@ -13889,7 +13905,7 @@ Nel caso fossi interessato soltanto a questi puntatori riassuntivi, dopo aver se
         <span class="n">m</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">heat_events</span><span class="p">)</span>
         <span class="k">for</span> <span class="n">country</span> <span class="ow">in</span> <span class="n">dict_country_hm</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
 
-            <span class="n">string</span><span class="o">=</span><span class="s1">&#39;&lt;center&gt;&lt;h1&gt;</span><span class="si">{}</span><span class="s1">&lt;a style=&quot;color:#e6194b;font-size:100%;&quot;&gt;</span><span class="si">{}</span><span class="s1">&lt;/a&gt;&lt;/h1&gt;&lt;/center&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Aggregate info of &quot;</span><span class="p">,</span><span class="n">country</span><span class="p">)</span>
+            <span class="n">string</span><span class="o">=</span><span class="s1">&#39;&lt;center&gt;&lt;h1&gt;&lt;a style=&quot;color:#b9cddf;font-size:100%;&quot;&gt;</span><span class="si">{}{}</span><span class="s1">&lt;/a&gt;&lt;/h1&gt;&lt;/center&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="s2">&quot;Aggregate info of &quot;</span><span class="p">,</span><span class="n">dict_country_hm</span><span class="p">[</span><span class="n">country</span><span class="p">])</span>
             <span class="n">string1</span><span class="o">=</span><span class="s1">&#39;&lt;center&gt;&lt;img src=&quot;data:image/jpg;base64,</span><span class="si">{}</span><span class="s1">&quot;&gt;&lt;center&gt;&#39;</span>
             <span class="n">fig</span><span class="o">=</span><span class="n">string</span><span class="o">+</span><span class="n">string1</span>
             <span class="n">encoded</span> <span class="o">=</span> <span class="n">base64</span><span class="o">.</span><span class="n">b64encode</span><span class="p">(</span><span class="nb">open</span><span class="p">(</span><span class="s2">&quot;heatmaps/complete_heatmap_&quot;</span><span class="o">+</span><span class="n">country</span><span class="o">+</span><span class="s2">&quot;.jpg&quot;</span><span class="p">,</span> <span class="s1">&#39;rb&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">())</span><span class="c1">#.decode()                           </span>
@@ -13934,7 +13950,9 @@ Nel caso fossi interessato soltanto a questi puntatori riassuntivi, dopo aver se
 
 <span class="sd">                popup1 = folium.Popup(iframe, show=True)</span>
 <span class="sd">                &#39;&#39;&#39;</span>
-                <span class="n">f</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;&lt;center&gt;&lt;h3&gt;&lt;a href=&quot;</span><span class="si">{}</span><span class="s1">&quot; target=&quot;_blank&quot; style=&quot;color:#f64060;font-size:100%;&quot;&gt;</span><span class="si">{}</span><span class="s1">&lt;/a&gt;&lt;/h3&gt;&lt;/center&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">event_url</span><span class="p">,</span><span class="n">line</span><span class="o">.</span><span class="n">event_name</span><span class="p">)))</span><span class="c1">#.encode(&quot;utf-8&quot;,&quot;surrogatepass&quot;).decode(&quot;unicode-escape&quot;, &quot;ignore&quot;))))</span>
+                <span class="n">f</span><span class="o">.</span><span class="n">html</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s1">&#39;&lt;center&gt;&lt;h3&gt;&lt;a href=&quot;</span><span class="si">{}</span><span class="s1">&quot; target=&quot;_blank&quot; style=&quot;color:#f75572;font-size:120%;font-weight:bold;&quot;&gt;</span><span class="si">{}</span><span class="s1">&lt;/a&gt;&lt;/h3&gt;&lt;/center&gt;&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">line</span><span class="o">.</span><span class="n">event_url</span><span class="p">,</span><span class="n">line</span><span class="o">.</span><span class="n">event_name</span><span class="p">)))</span><span class="c1">#.encode(&quot;utf-8&quot;,&quot;surrogatepass&quot;).decode(&quot;unicode-escape&quot;, &quot;ignore&quot;))))</span>
+
+                <span class="c1">#f.html.add_child(branca.element.Element(&#39;&lt;center&gt;&lt;h3&gt;&lt;a href=&quot;{}&quot; target=&quot;_blank&quot; style=&quot;color:#f64060;font-size:100%;&quot;&gt;{}&lt;/a&gt;&lt;/h3&gt;&lt;/center&gt;&#39;.format(line.event_url,line.event_name)))#.encode(&quot;utf-8&quot;,&quot;surrogatepass&quot;).decode(&quot;unicode-escape&quot;, &quot;ignore&quot;))))</span>
                 <span class="c1">#f.html.add_child(branca.element.Element(html_file))</span>
 
                 <span class="n">m1</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">folium</span><span class="o">.</span><span class="n">Circle</span><span class="p">(</span>
@@ -13974,7 +13992,7 @@ Nel caso fossi interessato soltanto a questi puntatori riassuntivi, dopo aver se
 
                 <span class="n">m1</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
 
-                <span class="n">iframe</span> <span class="o">=</span> <span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="n">html</span><span class="o">=</span> <span class="s1">&#39;&lt;body style= &quot;background-color:#5c5c5c;&quot;&gt; &lt;/body&gt;&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+                <span class="n">iframe</span> <span class="o">=</span> <span class="n">branca</span><span class="o">.</span><span class="n">element</span><span class="o">.</span><span class="n">IFrame</span><span class="p">(</span><span class="n">html</span><span class="o">=</span> <span class="s1">&#39;&lt;body style= &quot;background-color:#182534;&quot;&gt; &lt;/body&gt;&#39;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
                 <span class="n">f</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">iframe</span><span class="p">)</span>
 
                 <span class="c1"># Let&#39;s put the IFrame in a Popup</span>
@@ -14039,6 +14057,23 @@ Nel caso fossi interessato soltanto a questi puntatori riassuntivi, dopo aver se
 </div>
 </div>
 </div>
+
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+  </div>
 
 
 
