@@ -87,3 +87,9 @@ Interagendo con i link sopra riportati si verrà reindirizzati, per ogni link, a
  <!-- <a href = "https://www.twitter.com/MassiPerletti/"><img src="https://raw.githubusercontent.com/malborroni/Foundations_of_Computer-Science/master/images/Twitter_bird_logo.png" width = "3%"></a> -->
  <!-- <a href = "https://www.facebook.com/massimilianoperletti1"><img src="https://raw.githubusercontent.com/DBertazioli/Interact/master/img/iconfinder_Facebook_UI-03_2344286.png" width = "3%"></a> -->
 </p>
+
+<p align = "right">
+  <a href = "https://github.com/malborroni/">
+             <img src = "https://raw.githubusercontent.com/DBertazioli/ARmeetup/master/report/images/credits_readme.png" width = "25%">
+             </a>
+</p>
