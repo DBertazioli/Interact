@@ -25,14 +25,14 @@ Questa visualizzazione, nello specifico, si compone di due sezioni:<br>
   	<a href="https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html">Heatmap</a> </li>
 
  <p align="center">
-   <img src = "https://raw.githubusercontent.com/faber6911/Interact/master/img/heatmap.PNG" width = "80%">
+   <a href="https://dbertazioli.github.io/Interact/Interact_heatmap_european_capitals.html"><img src = "https://raw.githubusercontent.com/faber6911/Interact/master/img/heatmap.PNG" width = "80%"></a>
  </p>
 
  <li> Una seconda mappa in cui vengono presentati gli eventi per ogni Paese europeo: 
 	<a href="https://dbertazioli.github.io/Interact/stylish_map.html">Map</a> </li>
 
  <p align="center">
-   <img src = "https://raw.githubusercontent.com/faber6911/Interact/master/img/map.PNG" width = "80%">
+   <a href="https://dbertazioli.github.io/Interact/stylish_map.html"><img src = "https://raw.githubusercontent.com/faber6911/Interact/master/img/map.PNG" width = "80%"></a>
  </p>
 
 </ol>
