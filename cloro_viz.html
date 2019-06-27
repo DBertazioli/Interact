@@ -13932,9 +13932,17 @@ Premi il tasto <strong>Show Widgets</strong> per avviare la visualizzazione. Non
     <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Country&#39;</span><span class="p">,</span><span class="s1">&#39;Count&#39;</span><span class="p">])</span><span class="c1">#, index=[&#39;x&#39;,&#39;y&#39;,&#39;z&#39;])</span>
     <span class="k">for</span> <span class="n">it</span><span class="p">,</span><span class="n">key</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">norm_count_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">()):</span>
         <span class="c1">#print(key)</span>
+        <span class="k">if</span> <span class="n">norm_count_dict</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="n">topic</span><span class="p">]</span><span class="o">*</span><span class="mi">10</span><span class="o">==</span><span class="mi">1530</span><span class="p">:</span>
+            <span class="n">count</span><span class="o">=</span><span class="mi">1500</span>
+        <span class="k">elif</span> <span class="n">norm_count_dict</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="n">topic</span><span class="p">]</span><span class="o">*</span><span class="mi">10</span><span class="o">-</span><span class="mi">10</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">count</span><span class="o">=</span><span class="mi">0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">count</span><span class="o">=</span><span class="n">norm_count_dict</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="n">topic</span><span class="p">]</span><span class="o">*</span><span class="mi">10</span><span class="o">-</span><span class="mi">10</span>
+        
+        
         <span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
      <span class="s2">&quot;Country&quot;</span><span class="p">:</span> <span class="n">key</span><span class="p">,</span>
-     <span class="s2">&quot;Count&quot;</span><span class="p">:</span>  <span class="mi">1500</span> <span class="k">if</span> <span class="n">norm_count_dict</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="n">topic</span><span class="p">]</span><span class="o">*</span><span class="mi">10</span><span class="o">==</span><span class="mi">1530</span> <span class="k">else</span> <span class="n">norm_count_dict</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="n">topic</span><span class="p">]</span><span class="o">*</span><span class="mi">10</span><span class="o">-</span><span class="mi">10</span> 
+     <span class="s2">&quot;Count&quot;</span><span class="p">:</span>   <span class="n">count</span>
       <span class="p">},</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">df</span><span class="o">=</span><span class="n">df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="mi">14</span><span class="p">)</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
     <span class="n">df</span><span class="p">[</span><span class="s2">&quot;cloro_id&quot;</span><span class="p">]</span><span class="o">=</span><span class="s2">&quot;NaN&quot;</span>
@@ -13970,6 +13978,7 @@ Premi il tasto <strong>Show Widgets</strong> per avviare la visualizzazione. Non
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#HIDDEN</span>
+<span class="n">topic_list</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
 <span class="nd">@interact</span><span class="p">(</span><span class="n">topic</span><span class="o">=</span><span class="n">topic_list</span><span class="p">)</span>
 <span class="k">def</span> <span class="nf">show_canned_examples</span><span class="p">(</span><span class="n">topic</span><span class="p">):</span>
     
@@ -13991,6 +14000,8 @@ Premi il tasto <strong>Show Widgets</strong> per avviare la visualizzazione. Non
             <span class="n">title_cancel</span><span class="o">=</span><span class="s1">&#39;Exit me&#39;</span><span class="p">,</span>
             <span class="n">force_separate_button</span><span class="o">=</span><span class="kc">True</span>
         <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">map1</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Per le regioni in nero non si dispone di dati riguardo ai Meetups&quot;</span><span class="p">)</span>
 
     <span class="c1"># Display the map</span>
     <span class="k">return</span> <span class="n">map1</span>
@@ -14025,7 +14036,7 @@ Premi il tasto <strong>Show Widgets</strong> per avviare la visualizzazione. Non
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The map is built using <a href="https://python-visualization.github.io/folium/">folium API</a> to <a href="https://leafletjs.com/">leaflet</a>.</p>
-<p>View the full code <a href="https://github.com/DBertazioli/Interact/blob/master/Interact_heatmap_european_capitals.ipynb">here</a>.</p>
+<p>View the full code <a href="https://github.com/DBertazioli/Interact/blob/master/cloro_viz.ipynb">here</a>.</p>
 
 </div>
 </div>
