@@ -5,7 +5,7 @@
 <head><meta charset="utf-8" />
 
 
-<title>cloro_try</title>
+<title>cloro_viz</title>
 
 <style type="text/css">
     /*!
@@ -13188,13 +13188,12 @@ div#notebook {
   </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Esplora-la-heatmap">Esplora la heatmap<a class="anchor-link" href="#Esplora-la-heatmap">&#182;</a></h2><p>Benvenuto nella nostra heatmap interattiva basata sui dati raccolti dalle risposte degli utenti agli eventi <strong>Meetup</strong>.
+<h2 id="Esplora-la-visualizzazione">Esplora la visualizzazione<a class="anchor-link" href="#Esplora-la-visualizzazione">&#182;</a></h2><p>Benvenuto nel nostro coropleto interattivo basato sui dati raccolti dalle risposte degli utenti agli eventi <strong>Meetup</strong>.
 Premi il tasto <strong>Show Widgets</strong> per avviare la visualizzazione. Non importa se premerai quello superiore o quello inferiore, il risultato sarà lo stesso.</p>
 <h3 id="NB">NB<a class="anchor-link" href="#NB">&#182;</a></h3><p><strong>Il caricamento della mappa potrebbe richiedere anche alcuni minuti, dipendentemente dal traffico.</strong></p>
 <p><strong>Non scoraggiarti, cogli l'occasione per leggere le istruzioni.</strong></p>
-<h4 id="Cosa-posso-vedere?">Cosa posso vedere?<a class="anchor-link" href="#Cosa-posso-vedere?">&#182;</a></h4><p>Potrai esplorare la mappa europea osservando la rappresentazione della numerosità degli eventi che hanno trattato un determinato
-topic. I topic sono gli argomenti trattati durante gli eventi e possono essere molto vari: da <strong>Business</strong> fino a <strong>Tech</strong>, da <strong>LGBT</strong> ad <strong>Education</strong>.</p>
-<h4 id="Sicuri-che-la-vostra-mappa-non-rappresenti-semplicemente-una-mappa-di-popolazione-?">Sicuri che la vostra mappa non rappresenti semplicemente una mappa di popolazione ?<a class="anchor-link" href="#Sicuri-che-la-vostra-mappa-non-rappresenti-semplicemente-una-mappa-di-popolazione-?">&#182;</a></h4><p>Sicurissimi. Ci siamo premurati di scalare i dati in nostro possesso rispetto alla popolazione residente in macroaree così che le "macchie di calore" non siano direttamente proporzionali alla popolazione in quella zona ma rispecchino effettivamente la proporzione di trattamento di quel topic.</p>
+<h4 id="Cosa-posso-vedere?">Cosa posso vedere?<a class="anchor-link" href="#Cosa-posso-vedere?">&#182;</a></h4><p>Potrai esplorare la mappa europea osservando la rappresentazione della numerosità degli eventi che hanno trattato un determinato topic. I topic sono gli argomenti trattati durante gli eventi e possono essere molto vari: da <strong>Business</strong> fino a <strong>Tech</strong>, da <strong>LGBT</strong> ad <strong>Education</strong>.</p>
+<h4 id="Sicuri-che-la-vostra-mappa-non-rappresenti-semplicemente-una-mappa-di-popolazione-?">Sicuri che la vostra mappa non rappresenti semplicemente una mappa di popolazione ?<a class="anchor-link" href="#Sicuri-che-la-vostra-mappa-non-rappresenti-semplicemente-una-mappa-di-popolazione-?">&#182;</a></h4><p>Sicurissimi. Ci siamo premurati di scalare i dati in nostro possesso rispetto alla popolazione residente in macroaree così che le gradazioni di colore assunte dal coropleto non siano direttamente proporzionali alla popolazione in quella zona ma rispecchino effettivamente la proporzione di trattamento di quel topic.</p>
 <h4 id="Come-posso-accedere-ai-contenuti-?">Come posso accedere ai contenuti ?<a class="anchor-link" href="#Come-posso-accedere-ai-contenuti-?">&#182;</a></h4><p>Esplorare i contenuti è molto semplice, ti basta infatti premere sull'apposito widget:</p>
 <p><img src="img/widget_heatmap.PNG" alt="widget"></p>
 <p>Quando avrai interagito con il menù a tendina ti si presenterà la scelta del topic da selezionare:</p>
@@ -13975,7 +13974,8 @@ topic. I topic sono gli argomenti trattati durante gli eventi e possono essere m
     
     <span class="n">map1</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="n">ddrop</span><span class="p">[</span><span class="s1">&#39;v_lat&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span><span class="n">ddrop</span><span class="p">[</span><span class="s1">&#39;v_lon&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">tiles</span><span class="o">=</span><span class="s2">&quot;cartodbpositron&quot;</span><span class="p">)</span>
     <span class="n">folium</span><span class="o">.</span><span class="n">Choropleth</span><span class="p">(</span>
-        <span class="n">geo_data</span><span class="o">=</span><span class="s2">&quot;/home/dario/Downloads/custom.geo(1).json&quot;</span><span class="p">,</span> 
+        <span class="c1">#geo_data=&quot;/home/dario/Downloads/custom.geo(1).json&quot;, </span>
+        <span class="n">geo_data</span><span class="o">=</span><span class="s2">&quot;https://raw.githubusercontent.com/DBertazioli/Interact/master/custom.json&quot;</span><span class="p">,</span>
         <span class="n">data</span><span class="o">=</span><span class="n">topic_df_dict</span><span class="p">[</span><span class="n">topic</span><span class="p">],</span>
         <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;cloro_id&#39;</span><span class="p">,</span> <span class="s1">&#39;Count&#39;</span><span class="p">],</span>
         <span class="n">key_on</span><span class="o">=</span><span class="s1">&#39;feature.properties.iso_a2&#39;</span><span class="p">,</span>
